@@ -1,0 +1,58 @@
+// Close button
+
+img {
+  height: auto;
+  width: auto;
+}
+
+.close {
+  cursor: pointer;
+  max-width: 20px;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+// Social favicons
+
+.social-favicon {
+  cursor: pointer;
+  max-width: 25px;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+// Logo
+
+.logo {
+  cursor: pointer;
+  max-width: 150px;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+// Navigation icons
+
+.nav-link-img {
+  cursor: pointer;
+  max-width: 16px;
+}
+
+.nav-link-chevron {
+  max-width: 16px;
+  margin-bottom: 2px;
+}
+
+// Hero background
+
+.hero-bg {
+  background-image: url(../assets/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}

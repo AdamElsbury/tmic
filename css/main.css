@@ -1,3 +1,132 @@
+.is-flex {
+  display: flex; }
 
+.is-flex-between {
+  justify-content: space-between; }
+
+.is-flex-end {
+  justify-content: flex-end; }
+
+.is-flex-center {
+  align-items: center; }
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #343434;
+  line-height: 25px;
+  opacity: .80;
+  font-weight: 300; }
+
+.text-white {
+  color: #FFFFFF !important; }
+
+.opacity-full {
+  opacity: 1; }
+
+.text-right {
+  text-align: right; }
+
+.is-padding-small {
+  padding: 15px 1.5rem 15px 1.5rem; }
+
+.is-padding-xs {
+  padding: 5px 1.5rem 5px 1.5rem; }
+
+.relative {
+  position: relative; }
+
+.notification-bar {
+  background-color: #3B9189;
+  padding: 17px 0 17px 0; }
+
+.is-text-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: ease-in-out 300ms;
+  font-size: 15px; }
+  .is-text-link:hover {
+    text-decoration: underline; }
+
+img {
+  height: auto;
+  width: auto; }
+
+.close {
+  cursor: pointer;
+  max-width: 20px; }
+  .close:hover {
+    opacity: .8; }
+
+.social-favicon {
+  cursor: pointer;
+  max-width: 25px; }
+  .social-favicon:hover {
+    opacity: .8; }
+
+.logo {
+  cursor: pointer;
+  max-width: 150px; }
+  .logo:hover {
+    opacity: .8; }
+
+.nav-link-img {
+  cursor: pointer;
+  max-width: 16px; }
+
+.nav-link-chevron {
+  max-width: 16px;
+  margin-bottom: 2px; }
+
+.hero-bg {
+  background-image: url(../assets/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; }
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  transition: ease-in-out color 200ms; }
+  .nav-link:hover {
+    color: #CC5500; }
+
+.nav-link-priority p {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 1 !important; }
+.nav-link-priority:hover {
+  opacity: .8; }
+
+.nav-link-primary {
+  color: #CC5500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: ease-in-out color 200ms;
+  font-size: 15px; }
+  .nav-link-primary:hover {
+    color: #000000; }
+
+.search-input {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  padding: 10px 40px 10px 20px;
+  width: 300px;
+  position: relative; }
+
+.search-input-icon {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  top: 13px;
+  right: 20px; }
+
+.border-bottom {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+// Base rules
+
+p {
+  font-family: $text-family-body;
+  font-size: 15px;
+  color: $color-cobalt;
+  line-height: 25px;
+  opacity: .80;
+  font-weight: 300;
+}
+
+// Color resets
+
+.text-white {
+  color: $color-white !important;
+}
+
+// Opacity resets
+
+.opacity-full {
+  opacity: 1;
+}
+
+// Alignment
+
+.text-right {
+  text-align: right;
+}
