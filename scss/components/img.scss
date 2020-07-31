@@ -54,5 +54,18 @@ img {
   background-image: url(../assets/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+}
+
+// Green splash paint bg
+
+.green-paint-bg {
+  background-image: url(../assets/green-paint-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Benefit bar icons
+
+.benefit-icon {
+  max-width: 100px;
 }

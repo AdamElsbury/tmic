@@ -9,6 +9,41 @@ p {
   font-weight: 300;
 }
 
+// Headers
+
+.small-pop-header {
+  font-family: $text-family-body;
+  font-size: 18px;
+  color: $color-cobalt;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 4.5px;
+}
+
+.page-header {
+  font-family: $text-family-header;
+  font-size: 60px;
+  color: $color-cobalt;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.section-header {
+  font-family: $text-family-header;
+  font-size: 50px;
+  color: $color-cobalt;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.benefit-header {
+  font-family: $text-family-body;
+  font-size: 16px;
+  color: $color-white;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
 // Color resets
 
 .text-white {

@@ -18,6 +18,35 @@ p {
   opacity: .80;
   font-weight: 300; }
 
+.small-pop-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #343434;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 4.5px; }
+
+.page-header {
+  font-family: "Amatic SC", cursive;
+  font-size: 60px;
+  color: #343434;
+  font-weight: 700;
+  line-height: 1.2em; }
+
+.section-header {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: #343434;
+  font-weight: 700;
+  line-height: 1.2em; }
+
+.benefit-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.2em; }
+
 .text-white {
   color: #FFFFFF !important; }
 
@@ -35,6 +64,9 @@ p {
 
 .relative {
   position: relative; }
+
+.margin-remove {
+  margin: none !important; }
 
 .notification-bar {
   background-color: #3B9189;
@@ -81,8 +113,15 @@ img {
 .hero-bg {
   background-image: url(../assets/hero.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  height: 500px; }
+  background-repeat: no-repeat; }
+
+.green-paint-bg {
+  background-image: url(../assets/green-paint-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.benefit-icon {
+  max-width: 100px; }
 
 .nav-link {
   font-family: "Poppins", sans-serif;
@@ -109,6 +148,118 @@ img {
   .nav-link-primary:hover {
     color: #000000; }
 
+.button-reset {
+  background: none;
+  border: none; }
+
+button {
+  cursor: pointer; }
+
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 3px solid transparent;
+  padding: 13px 43px 13px 43px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  min-width: 120px;
+  outline: none;
+  cursor: pointer; }
+
+.btn-secondary {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 13px 43px 13px 43px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  min-width: 120px;
+  outline: none;
+  cursor: pointer; }
+
+.fw {
+  width: 100%; }
+
+.square {
+  border-radius: 0px; }
+
+.btn-text-only {
+  font-family: "Amatic SC", cursive;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none; }
+  .btn-text-only img {
+    width: auto;
+    height: auto;
+    max-height: 0.8em;
+    margin-top: 2px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s; }
+  .btn-text-only:hover img {
+    margin-left: 15px; }
+
+.btn-text-only-large {
+  font-family: "Amatic SC", cursive;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  z-index: 3; }
+  .btn-text-only-large:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    background-color: #CC5500;
+    width: 30%;
+    height: 1.5em;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s; }
+  .btn-text-only-large img {
+    width: auto;
+    height: auto;
+    max-height: 0.8em;
+    margin-top: 3px;
+    margin-left: 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s; }
+  .btn-text-only-large:hover img {
+    margin-right: 15px; }
+
+.btn-bronze {
+  border: 3px solid #CC5500;
+  background-color: #CC5500;
+  color: #FFF; }
+  .btn-bronze:hover {
+    background-color: transparent;
+    color: #CC5500; }
+
+.btn-bronze-secondary {
+  border: 3px solid #CC5500;
+  background-color: transparent;
+  color: #CC5500; }
+  .btn-bronze-secondary:hover {
+    background-color: #CC5500;
+    border: 3px solid #CC5500;
+    color: #FFFFFF; }
+
+@media screen and (max-width: 500px) {
+  .btn-mobile-full-width {
+    width: 100%; } }
 .search-input {
   border: 0.1px solid rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
@@ -128,5 +279,44 @@ img {
 
 .border-bottom {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2); }
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.84);
+  padding: 60px;
+  width: 750px; }
+  .hero-content p {
+    width: 66%; }
+
+.product-card {
+  padding: 15px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px; }
+  .product-card .label {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    padding: 12px;
+    color: #343434; }
+    .product-card .label p {
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+      color: #000000;
+      margin: 0;
+      line-height: 0; }
+  .product-card .favourite {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 15px;
+    right: 30px; }
+
+.pd-1 {
+  background-image: url(../assets/vinicious.png); }
 
 /*# sourceMappingURL=main.css.map */

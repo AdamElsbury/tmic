@@ -1,0 +1,53 @@
+// Hero white card
+
+.hero-content {
+  background-color: rgba(255,255,255, 0.84);
+  padding: 60px;
+  width: 750px;
+
+  p {
+    width: 66%;
+  }
+}
+
+// Product card
+
+.product-card {
+  padding: 15px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+
+  .label {
+    background-color: $color-white;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    padding: 12px;
+    color: $color-cobalt;
+
+    p {
+      font-family: $text-family-body;
+      font-size: 10px;
+      color: $color-black;
+      margin: 0;
+      line-height: 0;
+    }
+  }
+
+  .favourite {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+  }
+}
+
+.pd-1 {
+  background-image: url(../assets/vinicious.png);
+}
