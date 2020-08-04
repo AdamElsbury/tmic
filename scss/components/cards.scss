@@ -19,12 +19,16 @@
   background-repeat: no-repeat;
   height: 300px;
 
+  img {
+    max-width: 20px;
+  }
+
   .label {
     background-color: $color-white;
     border-radius: 4px;
     position: absolute;
     top: 15px;
-    left: 30px;
+    left: 15px;
     padding: 12px;
     color: $color-cobalt;
 
@@ -43,10 +47,46 @@
     background-color: $color-white;
     position: absolute;
     bottom: 15px;
-    right: 30px;
+    right: 15px;
   }
 }
 
+// Product card below text
+
+.product-price {
+  font-family: $text-family-body;
+  font-size: 20px;
+  color: $color-bronze;
+  font-weight: $text-weight-semi-bold;
+}
+
+.product-title {
+  font-family: $text-family-header;
+  font-size: 40px;
+  color: $color-cobalt;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.maker-title {
+  font-family: $text-family-body;
+  font-size: 13px;
+  color: $color-cobalt;
+}
+
+
 .pd-1 {
   background-image: url(../assets/vinicious.png);
+}
+
+.pd-2 {
+  background-image: url(../assets/heather.png);
+}
+
+.pd-3 {
+  background-image: url(../assets/artem.png);
+}
+
+.pd-4 {
+  background-image: url(../assets/viktor.png);
 }

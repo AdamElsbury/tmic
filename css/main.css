@@ -56,6 +56,12 @@ p {
 .text-right {
   text-align: right; }
 
+.is-padding-large-container {
+  padding: 5px 3.5rem 5px 3.5rem; }
+
+.is-padding-medium {
+  padding: 25px 1.5rem 25px 1.5rem; }
+
 .is-padding-small {
   padding: 15px 1.5rem 15px 1.5rem; }
 
@@ -293,12 +299,14 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px; }
+  .product-card img {
+    max-width: 20px; }
   .product-card .label {
     background-color: #FFFFFF;
     border-radius: 4px;
     position: absolute;
     top: 15px;
-    left: 30px;
+    left: 15px;
     padding: 12px;
     color: #343434; }
     .product-card .label p {
@@ -313,9 +321,39 @@ button {
     background-color: #FFFFFF;
     position: absolute;
     bottom: 15px;
-    right: 30px; }
+    right: 15px; }
+
+.product-price {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #CC5500;
+  font-weight: 600; }
+
+.product-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  color: #343434;
+  font-weight: 700;
+  line-height: 1.2em; }
+
+.maker-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #343434; }
 
 .pd-1 {
   background-image: url(../assets/vinicious.png); }
+
+.pd-2 {
+  background-image: url(../assets/heather.png); }
+
+.pd-3 {
+  background-image: url(../assets/artem.png); }
+
+.pd-4 {
+  background-image: url(../assets/viktor.png); }
+
+.is-small-container {
+  max-width: 1152px !important; }
 
 /*# sourceMappingURL=main.css.map */
