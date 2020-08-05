@@ -90,3 +90,57 @@
 .pd-4 {
   background-image: url(../assets/viktor.png);
 }
+
+// Category tiles
+
+.category-tile {
+  padding: 45px;
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-tile-1 {
+  background-image: url(../assets/jewellery.jpg);
+}
+
+.category-tile-2 {
+  background-image: url(../assets/art.jpg);
+}
+
+.category-tile-3 {
+  background-image: url(../assets/forkids.jpg);
+}
+
+.category-tile-4 {
+  background-image: url(../assets/fashion.jpg);
+}
+
+.category-tile-5 {
+  background-image: url(../assets/homewares.jpg);
+}
+
+.category-tile-6 {
+  background-image: url(../assets/bags.jpg);
+}
+
+.category-tile-7 {
+  background-image: url(../assets/accessories.jpg);
+}
+
+.rectangle-div {
+  background-color: rgba(194, 84, 0, 0.8);
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    margin: 0 auto;
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+    color: $color-white;
+    font-weight: 700;
+    line-height: 1.2em;
+    opacity: 1;
+  }
+}

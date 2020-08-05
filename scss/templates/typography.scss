@@ -4,7 +4,7 @@ p {
   font-family: $text-family-body;
   font-size: 15px;
   color: $color-cobalt;
-  line-height: 25px;
+  line-height: 27px;
   opacity: .80;
   font-weight: 300;
 }
@@ -36,6 +36,15 @@ p {
   line-height: 1.2em;
 }
 
+.sub-section-header {
+  font-family: $text-family-header;
+  font-size: 30px;
+  color: $color-cobalt;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+
 .benefit-header {
   font-family: $text-family-body;
   font-size: 16px;
@@ -60,4 +69,14 @@ p {
 
 .text-right {
   text-align: right;
+}
+
+// Sizing
+
+.p-60 {
+  max-width: 60%;
+}
+
+.p-70 {
+  max-width: 70%;
 }

@@ -14,7 +14,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #343434;
-  line-height: 25px;
+  line-height: 27px;
   opacity: .80;
   font-weight: 300; }
 
@@ -40,6 +40,13 @@ p {
   font-weight: 700;
   line-height: 1.2em; }
 
+.sub-section-header {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  color: #343434;
+  font-weight: 700;
+  line-height: 1.2em; }
+
 .benefit-header {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -56,8 +63,17 @@ p {
 .text-right {
   text-align: right; }
 
+.p-60 {
+  max-width: 60%; }
+
+.p-70 {
+  max-width: 70%; }
+
 .is-padding-large-container {
   padding: 5px 3.5rem 5px 3.5rem; }
+
+.is-padding-large {
+  padding: 75px 1.5rem 75px 1.5rem; }
 
 .is-padding-medium {
   padding: 25px 1.5rem 25px 1.5rem; }
@@ -73,6 +89,31 @@ p {
 
 .margin-remove {
   margin: none !important; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 25px; }
+
+.grid-2-col {
+  grid-template-columns: auto auto; }
+
+.grid-3-col {
+  grid-template-columns: auto auto auto; }
+
+.grid-4-col {
+  grid-template-columns: auto auto auto auto; }
+
+.grid-item-s1-e2 {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+.grid-item-s1-e3 {
+  grid-column-start: 1;
+  grid-column-end: 4; }
+
+.grid-item-s1-e4 {
+  grid-column-start: 1;
+  grid-column-end: 5; }
 
 .notification-bar {
   background-color: #3B9189;
@@ -95,6 +136,9 @@ img {
   max-width: 20px; }
   .close:hover {
     opacity: .8; }
+
+.fw-img {
+  max-width: 100%; }
 
 .social-favicon {
   cursor: pointer;
@@ -263,6 +307,15 @@ button {
     border: 3px solid #CC5500;
     color: #FFFFFF; }
 
+.btn-yellow-secondary {
+  border: 3px solid #F8D338;
+  background-color: transparent;
+  color: #F8D338; }
+  .btn-yellow-secondary:hover {
+    background-color: #F8D338;
+    border: 3px solid #F8D338;
+    color: #FFFFFF; }
+
 @media screen and (max-width: 500px) {
   .btn-mobile-full-width {
     width: 100%; } }
@@ -352,6 +405,47 @@ button {
 
 .pd-4 {
   background-image: url(../assets/viktor.png); }
+
+.category-tile {
+  padding: 45px;
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.category-tile-1 {
+  background-image: url(../assets/jewellery.jpg); }
+
+.category-tile-2 {
+  background-image: url(../assets/art.jpg); }
+
+.category-tile-3 {
+  background-image: url(../assets/forkids.jpg); }
+
+.category-tile-4 {
+  background-image: url(../assets/fashion.jpg); }
+
+.category-tile-5 {
+  background-image: url(../assets/homewares.jpg); }
+
+.category-tile-6 {
+  background-image: url(../assets/bags.jpg); }
+
+.category-tile-7 {
+  background-image: url(../assets/accessories.jpg); }
+
+.rectangle-div {
+  background-color: rgba(194, 84, 0, 0.8);
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center; }
+  .rectangle-div p {
+    margin: 0 auto;
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2em;
+    opacity: 1; }
 
 .is-small-container {
   max-width: 1152px !important; }

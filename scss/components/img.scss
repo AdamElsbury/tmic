@@ -1,4 +1,4 @@
-// Close button
+// General
 
 img {
   height: auto;
@@ -12,6 +12,10 @@ img {
   &:hover {
     opacity: .8;
   }
+}
+
+.fw-img {
+  max-width: 100%;
 }
 
 // Social favicons
@@ -70,4 +74,4 @@ img {
   max-width: 100px;
 }
 
-// 
+//
