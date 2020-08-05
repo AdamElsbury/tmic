@@ -91,69 +91,25 @@ button {
 }
 
 .btn-text-only {
-  font-family: $text-family-header;
-  font-size: 13px;
+  font-family: $text-family-body;
+  font-size: 15px;
   font-weight: $text-weight-semi-bold;
-  letter-spacing: 2px;
   text-decoration: none;
+  color: $color-bronze;
+  transition: all .3s ease-in-out;
 
-  img {
-    width: auto;
+  img, svg {
     height: auto;
-    max-height: 0.8em;
-    margin-top: 2px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
+    width: auto;
+    max-height: 0.7rem;
+    margin: 3px 0 0 10px;
+    transition: all 200ms ease-out;
   }
 
   &:hover {
-
+    color: $color-bronze;
     img {
-    margin-left: 15px;
-    }
-  }
-}
-
-.btn-text-only-large {
-  font-family: $text-family-header;
-  font-size: 17px;
-  font-weight: $text-weight-semi-bold;
-  text-decoration: none;
-  position: relative;
-  z-index: 3;
-
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 30px;
-    background-color: $color-bronze;
-    width: 30%;
-    height: 1.5em;
-    z-index: -1;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-  }
-
-  img {
-    width: auto;
-    height: auto;
-    max-height: 0.8em;
-    margin-top: 3px;
-    margin-left: 10px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-  }
-
-  &:hover {
-
-    img {
-    margin-right: 15px;
+      margin-left: 25px;
     }
   }
 }
@@ -196,6 +152,26 @@ button {
   }
 }
 
+// Carousel Controls
+
+.carousel-control-container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid #343434;
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #343434;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+  }
+}
 
 // Mobile
 

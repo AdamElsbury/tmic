@@ -10,6 +10,25 @@
 .is-flex-center {
   align-items: center; }
 
+.is-flex-start {
+  align-items: flex-start; }
+
+.is-flex-start-center {
+  align-items: flex-start;
+  justify-content: center; }
+
+.is-flex-end-bottom {
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.is-flex-end-center {
+  align-items: center;
+  justify-content: flex-end; }
+
+.is-flex-justify-center {
+  justify-content: center;
+  align-items: center; }
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -24,7 +43,8 @@ p {
   color: #343434;
   line-height: 25px;
   font-weight: 400;
-  letter-spacing: 4.5px; }
+  letter-spacing: 4.5px;
+  text-transform: uppercase; }
 
 .page-header {
   font-family: "Amatic SC", cursive;
@@ -59,6 +79,9 @@ p {
 
 .opacity-full {
   opacity: 1; }
+
+.text-center {
+  text-align: center; }
 
 .text-right {
   text-align: right; }
@@ -241,54 +264,22 @@ button {
   border-radius: 0px; }
 
 .btn-text-only {
-  font-family: "Amatic SC", cursive;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-decoration: none; }
-  .btn-text-only img {
-    width: auto;
-    height: auto;
-    max-height: 0.8em;
-    margin-top: 2px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s; }
-  .btn-text-only:hover img {
-    margin-left: 15px; }
-
-.btn-text-only-large {
-  font-family: "Amatic SC", cursive;
-  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  position: relative;
-  z-index: 3; }
-  .btn-text-only-large:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 30px;
-    background-color: #CC5500;
-    width: 30%;
-    height: 1.5em;
-    z-index: -1;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s; }
-  .btn-text-only-large img {
-    width: auto;
+  color: #CC5500;
+  transition: all .3s ease-in-out; }
+  .btn-text-only img, .btn-text-only svg {
     height: auto;
-    max-height: 0.8em;
-    margin-top: 3px;
-    margin-left: 10px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s; }
-  .btn-text-only-large:hover img {
-    margin-right: 15px; }
+    width: auto;
+    max-height: 0.7rem;
+    margin: 3px 0 0 10px;
+    transition: all 200ms ease-out; }
+  .btn-text-only:hover {
+    color: #CC5500; }
+    .btn-text-only:hover img {
+      margin-left: 25px; }
 
 .btn-bronze {
   border: 3px solid #CC5500;
@@ -315,6 +306,18 @@ button {
     background-color: #F8D338;
     border: 3px solid #F8D338;
     color: #FFFFFF; }
+
+.carousel-control-container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid #343434;
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer; }
+  .carousel-control-container:hover {
+    background-color: #343434; }
+    .carousel-control-container:hover svg path {
+      fill: #FFFFFF; }
 
 @media screen and (max-width: 500px) {
   .btn-mobile-full-width {
