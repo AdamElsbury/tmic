@@ -573,7 +573,10 @@ button {
 
   .category-tile {
     height: 175px;
-    padding: 0; } }
+    padding: 0; }
+
+  .image-overlay-text {
+    bottom: 0px; } }
 .is-small-container {
   max-width: 1152px !important; }
 
