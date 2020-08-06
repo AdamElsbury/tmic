@@ -10,6 +10,15 @@ p {
 }
 
 // Headers
+.xs-pop-header {
+  font-family: $text-family-body;
+  font-size: 12px;
+  color: $color-cobalt;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+}
 
 .small-pop-header {
   font-family: $text-family-body;

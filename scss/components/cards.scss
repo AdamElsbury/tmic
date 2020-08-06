@@ -62,7 +62,7 @@
 
 .product-title {
   font-family: $text-family-header;
-  font-size: 40px;
+  font-size: 30px;
   color: $color-cobalt;
   font-weight: 700;
   line-height: 1.2em;
@@ -143,4 +143,14 @@
     line-height: 1.2em;
     opacity: 1;
   }
+}
+
+// Small div overlaying main images
+
+.image-overlay-text {
+  background-color: $color-white;
+  padding: 16px 36px 16px 36px;
+  position: absolute;
+  bottom: 66px;
+  right: 25px;
 }
