@@ -89,6 +89,9 @@ p {
 .text-white {
   color: #FFFFFF !important; }
 
+.text-cobalt {
+  color: #343434 !important; }
+
 .opacity-full {
   opacity: 1; }
 
@@ -107,6 +110,30 @@ p {
 .p-70 {
   max-width: 70%; }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefit-header {
+    font-size: 14px; }
+
+  .p-width-tablet-reset {
+    max-width: 100%; }
+
+  .section-header {
+    font-size: 40px; }
+
+  .sub-section-header {
+    font-size: 30px; } }
+@media screen and (max-width: 768px) {
+  .benefit-header {
+    font-size: 13px; }
+
+  .page-header {
+    font-size: 40px; }
+
+  .p-width-mobile-reset {
+    max-width: 100%; }
+
+  .small-pop-header {
+    font-size: 13px; } }
 .is-padding-large-container {
   padding: 5px 3.5rem 5px 3.5rem; }
 
@@ -125,12 +152,18 @@ p {
 .relative {
   position: relative; }
 
+.padding-remove {
+  padding: 0 !important; }
+
 .margin-remove {
   margin: none !important; }
 
 .margin-bottom-remove {
   margin-bottom: 0 !important; }
 
+@media screen and (max-width: 768px) {
+  .is-padding-large {
+    padding: 35px 1.5rem 35px 1.5rem; } }
 .grid-container {
   display: grid;
   grid-gap: 25px; }
@@ -160,6 +193,9 @@ p {
   background-color: #3B9189;
   padding: 17px 0 17px 0; }
 
+@media screen and (max-width: 1024px) {
+  .notification-bar {
+    padding: 15px 32px 15px 32px; } }
 .is-text-link {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -167,6 +203,10 @@ p {
   font-size: 15px; }
   .is-text-link:hover {
     text-decoration: underline; }
+
+.footer-link-ul li {
+  display: block;
+  padding: 5px 0 5px 0; }
 
 img {
   height: auto;
@@ -211,9 +251,18 @@ img {
   background-position: center;
   background-repeat: no-repeat; }
 
+.blue-bg {
+  background-color: #415A78; }
+
+.green-bg {
+  background-color: #3B9189; }
+
 .benefit-icon {
   max-width: 100px; }
 
+@media screen and (max-width: 768px) {
+  .benefit-icon {
+    max-width: 50px; } }
 .nav-link {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -325,6 +374,9 @@ button {
     border: 3px solid #F8D338;
     color: #FFFFFF; }
 
+.mobile-carousel-control-container {
+  display: none; }
+
 .carousel-control-container {
   height: 60px;
   width: 60px;
@@ -337,9 +389,15 @@ button {
     .carousel-control-container:hover svg path {
       fill: #FFFFFF; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .btn-mobile-full-width {
-    width: 100%; } }
+    width: 100%; }
+
+  .desktop-nav {
+    display: none; }
+
+  .mobile-carousel-control-container {
+    display: flex; } }
 .search-input {
   border: 0.1px solid rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
@@ -357,6 +415,20 @@ button {
   top: 13px;
   right: 20px; }
 
+.subscribe-input {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000000;
+  padding: 15px 43px 15px 43px;
+  width: 300px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe-input {
+    width: auto;
+    max-width: 51%; } }
 .border-bottom {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2); }
 
@@ -368,13 +440,9 @@ button {
     width: 66%; }
 
 .product-card {
-  padding: 15px;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 300px; }
   .product-card img {
-    max-width: 20px; }
+    max-width: 100%; }
   .product-card .label {
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -394,8 +462,8 @@ button {
     padding: 15px;
     background-color: #FFFFFF;
     position: absolute;
-    bottom: 15px;
-    right: 15px; }
+    bottom: 7%;
+    right: 7%; }
 
 .product-price {
   font-family: "Poppins", sans-serif;
@@ -479,6 +547,33 @@ button {
   background-color: #F6F6F6;
   padding: 32px; }
 
+.instagram-carousel-tile {
+  max-height: 160px; }
+  .instagram-carousel-tile img {
+    width: auto;
+    height: auto;
+    max-height: 160px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+    height: 233px; }
+
+  .image-overlay-text {
+    bottom: 147px;
+    right: 25px; } }
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+    padding: 20px; }
+    .hero-content p {
+      width: 100%; }
+
+  .product-card {
+    height: 210px; }
+
+  .category-tile {
+    height: 175px;
+    padding: 0; } }
 .is-small-container {
   max-width: 1152px !important; }
 

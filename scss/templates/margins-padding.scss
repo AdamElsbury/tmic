@@ -26,10 +26,22 @@
 
 // Removals
 
+.padding-remove {
+  padding: 0 !important;
+}
+
 .margin-remove {
   margin: none !important;
 }
 
 .margin-bottom-remove {
   margin-bottom: 0 !important;
+}
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .is-padding-large {
+    padding: 35px 1.5rem 35px 1.5rem;
+  }
 }

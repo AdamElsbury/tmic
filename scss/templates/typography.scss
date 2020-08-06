@@ -73,6 +73,10 @@ p {
   color: $color-white !important;
 }
 
+.text-cobalt {
+  color: $color-cobalt !important;
+}
+
 // Opacity resets
 
 .opacity-full {
@@ -101,4 +105,43 @@ p {
 
 .p-70 {
   max-width: 70%;
+}
+// Tablet
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefit-header {
+    font-size: 14px;
+  }
+
+  .p-width-tablet-reset {
+    max-width: 100%;
+  }
+
+  .section-header {
+    font-size: 40px;
+  }
+
+  .sub-section-header {
+    font-size: 30px;
+  }
+
+}
+// Mobile
+
+@media screen and (max-width: 768px) {
+ .benefit-header {
+   font-size: 13px;
+ }
+
+ .page-header {
+   font-size: 40px;
+ }
+
+ .p-width-mobile-reset {
+   max-width: 100%;
+ }
+
+ .small-pop-header {
+   font-size: 13px;
+ }
 }

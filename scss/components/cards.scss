@@ -13,14 +13,10 @@
 // Product card
 
 .product-card {
-  padding: 15px;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 300px;
 
   img {
-    max-width: 20px;
+    max-width: 100%;
   }
 
   .label {
@@ -46,8 +42,8 @@
     padding: 15px;
     background-color: $color-white;
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 7%;
+    right: 7%;
   }
 }
 
@@ -160,4 +156,50 @@
 .testimonial-card {
   background-color: #F6F6F6;
   padding: 32px;
+}
+
+// Instagram carousel in footer
+
+.instagram-carousel-tile {
+  max-height: 160px;
+
+  img {
+    width: auto;
+    height: auto;
+    max-height: 160px;
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+    height: 233px;
+  }
+
+  .image-overlay-text {
+    bottom: 147px;
+    right: 25px;
+  }
+}
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .product-card {
+    height: 210px;
+  }
+
+  .category-tile {
+    height: 175px;
+    padding: 0;
+  }
 }

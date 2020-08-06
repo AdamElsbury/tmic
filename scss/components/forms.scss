@@ -18,3 +18,26 @@
   top: 13px;
   right: 20px;
 }
+
+// General input
+
+.subscribe-input {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  background-color: $color-white;
+  font-family: $text-family-body;
+  font-size: 12px;
+  font-weight: 300;
+  color: $color-black;
+  padding: 15px 43px 15px 43px;;
+  width: 300px;
+}
+
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe-input {
+    width: auto;
+    max-width: 51%;
+  }
+}

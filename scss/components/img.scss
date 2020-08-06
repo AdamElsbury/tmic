@@ -68,10 +68,24 @@ img {
   background-repeat: no-repeat;
 }
 
+.blue-bg {
+  background-color: #415A78;
+}
+
+.green-bg {
+  background-color: $color-green;
+}
+
 // Benefit bar icons
 
 .benefit-icon {
   max-width: 100px;
 }
 
-//
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .benefit-icon {
+    max-width: 50px;
+  }
+}

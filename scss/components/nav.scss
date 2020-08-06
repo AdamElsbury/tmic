@@ -154,6 +154,10 @@ button {
 
 // Carousel Controls
 
+.mobile-carousel-control-container {
+  display: none;
+}
+
 .carousel-control-container {
   height: 60px;
   width: 60px;
@@ -175,8 +179,16 @@ button {
 
 // Mobile
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .btn-mobile-full-width {
     width: 100%;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-carousel-control-container {
+    display: flex;
   }
 }
