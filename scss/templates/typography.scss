@@ -9,6 +9,10 @@ p {
   font-weight: 300;
 }
 
+.p-mini {
+  font-size: 13px !important;
+}
+
 // Headers
 .xs-pop-header {
   font-family: $text-family-body;
@@ -73,6 +77,10 @@ p {
 
 .opacity-full {
   opacity: 1;
+}
+
+.opacity-50 {
+  opacity: .5;
 }
 
 // Alignment

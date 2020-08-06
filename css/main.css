@@ -37,6 +37,9 @@ p {
   opacity: .80;
   font-weight: 300; }
 
+.p-mini {
+  font-size: 13px !important; }
+
 .xs-pop-header {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -89,6 +92,9 @@ p {
 .opacity-full {
   opacity: 1; }
 
+.opacity-50 {
+  opacity: .5; }
+
 .text-center {
   text-align: center; }
 
@@ -121,6 +127,9 @@ p {
 
 .margin-remove {
   margin: none !important; }
+
+.margin-bottom-remove {
+  margin-bottom: 0 !important; }
 
 .grid-container {
   display: grid;
@@ -466,7 +475,14 @@ button {
   bottom: 66px;
   right: 25px; }
 
+.testimonial-card {
+  background-color: #F6F6F6;
+  padding: 32px; }
+
 .is-small-container {
   max-width: 1152px !important; }
+
+.is-500-container {
+  max-width: 500px !important; }
 
 /*# sourceMappingURL=main.css.map */
