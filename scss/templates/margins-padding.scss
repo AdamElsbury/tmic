@@ -44,4 +44,12 @@
   .is-padding-large {
     padding: 35px 1.5rem 35px 1.5rem;
   }
+
+  .ml-remove-mobile-only {
+    margin-left: 0 !important;
+  }
+
+  .mt-1-mobile-only {
+    margin-top: 1rem;
+  }
 }

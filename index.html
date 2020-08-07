@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
+<body class="is-relative">
   <section class="section notification-bar">
     <div class="container">
       <div class="columns">
@@ -19,6 +19,52 @@
           <img src="assets/close.svg" alt="A close icon" class="close">
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section is-hidden-desktop is-padding-small">
+    <div class="container">
+      <div class="columns is-mobile">
+        <article class="column is-two-fifths is-flex is-flex-center">
+          <img src="assets/hamburger.svg" alt="A hamburger menu" class="mobile-top-nav-img" onclick="showMenu()">
+        </article>
+        <article class="column is-one-fifth is-flex is-flex-center">
+          <img src="assets/logo.png" alt="TMIC logo" class="">
+        </article>
+        <article class="column is-two-fifths is-flex is-flex-center">
+          <ul class="mobile-top-nav-ul">
+            <li class="pr-3"><a href="#"><div><img src="assets/find.svg" alt="A magnifying glass" class="mobile-top-nav-link-img"><p>Search</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/user.svg" alt="An icon indicating a login function" class="mobile-top-nav-link-img"><p>Login</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/heart.svg" alt="A heart" class="mobile-top-nav-link-img"><p>Fave</p></div></a></li>
+            <li><a href="#"><div><img src="assets/remove-from-cart.svg" alt="A shopping cart" class="mobile-top-nav-link-img"><p>Cart</p></div></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-menu-container is-hidden-desktop" id="menu">
+    <div class="mobile-menu-columns is-mobile">
+      <article class="mobile-menu-column-20 mobile-menu-close-container is-flex is-flex-justify-center">
+        <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeMenu()">
+      </article>
+      <article class="mobile-menu-column mobile-menu-links-container">
+        <article class="menu-links">
+          <ul>
+            <li><a href="#"><b>Sell With Us</b></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Meet The Makers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="mobile-social-container">
+            <img src="assets/instagram-sketched-white.svg" alt="Instagram Logo" class="social-favicon">
+            <img src="assets/facebook-white.svg" alt="Facebook logo" class="social-favicon ml-2">
+          </div>
+          <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only">Shop Now</button>
+        </article>
+      </article>
     </div>
   </section>
 
@@ -105,8 +151,8 @@
         <h1 class="small-pop-header mb-3">THE MAKE IT COLLECTIVE</h1>
         <h2 class="page-header">We sell high quality, hand-made products created with love & care</h2>
         <p class="mt-4 mb-5">We are a community of artisans, designers & independent creatives to share our goods with lovers of handmade products.</p>
-        <button class="btn-primary btn-bronze">Shop Now</button>
-        <button class="btn-secondary btn-bronze-secondary ml-2">About Us</button>
+        <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only">Shop Now</button>
+        <button class="btn-secondary btn-bronze-secondary ml-2 btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only">About Us</button>
       </div>
     </div>
   </section>
@@ -672,14 +718,14 @@
         <article class="column is-flex is-flex-center">
           <form action="" class="">
             <input type="text" placeholder="Enter your email" class="subscribe-input">
-            <input type="submit" class="btn-secondary btn-yellow-secondary ml-2" value="Subscribe">
+            <input type="submit" class="btn-secondary btn-yellow-secondary ml-2 btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only" value="Subscribe">
           </form>
         </article>
       </div>
     </div>
   </section>
   <section class="section padding-remove">
-      <div class="columns is-gapless">
+      <div class="columns is-gapless is-mobile">
         <article class="column instagram-carousel-tile">
           <img src="assets/2.jpg" alt="">
         </article>
@@ -698,33 +744,33 @@
         <article class="column instagram-carousel-tile">
           <img src="assets/3.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile">
+        <article class="column instagram-carousel-tile is-hidden-mobile">
           <img src="assets/4.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile">
+        <article class="column instagram-carousel-tile is-hidden-mobile">
           <img src="assets/5.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile is-hidden-tablet-only">
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
           <img src="assets/2.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile is-hidden-tablet-only">
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
           <img src="assets/3.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile is-hidden-tablet-only">
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
           <img src="assets/4.jpg" alt="">
         </article>
-        <article class="column instagram-carousel-tile is-hidden-tablet-only">
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
           <img src="assets/5.jpg" alt="">
         </article>
       </div>
   </section>
   <section class="section">
     <div class="container">
-      <div class="columns is-multiline">
-        <article class="column is-one-quarter-tablet is-one-fifth-desktop">
+      <div class="columns is-multiline is-mobile">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
           <img src="assets/logo.png" alt="The make it collective logo" class="logo">
         </article>
-        <article class="column is-one-quarter-tablet is-one-fifth-desktop">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
           <h4 class="sub-section-header mb-5">Buy Handmade</h4>
           <ul class="footer-link-ul">
             <li><a href="#" class="is-text-link text-cobalt">Jewellery</a></li>
@@ -737,7 +783,7 @@
             </li>
           </ul>
         </article>
-        <article class="column is-one-quarter-tablet is-one-fifth-desktop">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
           <h4 class="sub-section-header mb-5">For The Makers</h4>
           <ul class="footer-link-ul">
             <li><a href="#" class="is-text-link text-cobalt">Sell Online With Us</a></li>
@@ -749,7 +795,7 @@
             </li>
           </ul>
         </article>
-        <article class="column is-one-quarter-tablet is-one-fifth-desktop">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
           <h4 class="sub-section-header mb-5">More Information</h4>
           <ul class="footer-link-ul">
             <li><a href="#" class="is-text-link text-cobalt">About Us</a></li>
@@ -759,7 +805,7 @@
             </li>
           </ul>
         </article>
-        <article class="column is-one-quarter-tablet is-one-fifth-desktop">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
           <h4 class="sub-section-header mb-5">Socials</h4>
           <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
           <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
@@ -768,7 +814,7 @@
     </div>
   </section>
 </footer>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 
 

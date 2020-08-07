@@ -41,3 +41,11 @@
     max-width: 51%;
   }
 }
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .subscribe-input {
+    width: 100%;
+  }
+}
