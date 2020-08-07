@@ -300,6 +300,10 @@ img {
   .nav-link-primary:hover {
     color: #000000; }
 
+.button {
+  border: none;
+  padding: 0; }
+
 .button-reset {
   background: none;
   border: none; }

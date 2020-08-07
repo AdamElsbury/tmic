@@ -11,3 +11,7 @@ function closeMenu() {
   document.getElementById("menu").style.top = "-2000px";
   document.getElementById("menu").style.display = "absolute";
 }
+
+function closeNotification() {
+  document.getElementById("notification").style.display = "none";
+}
