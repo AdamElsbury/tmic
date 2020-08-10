@@ -184,21 +184,16 @@ button {
   }
 }
 
+// Tablet
+
+
 
 
 // Mobile
 
-@media screen and (max-width: 768px) {
-  .btn-mobile-full-width {
-    width: 100%;
-  }
-
+@media screen and (max-width: 1024px) {
   .desktop-nav {
     display: none;
-  }
-
-  .mobile-carousel-control-container {
-    display: flex;
   }
 
   // Mobile menu stuff
@@ -268,5 +263,15 @@ button {
       opacity: 1;
       line-height: 1rem;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-mobile-full-width {
+    width: 100%;
+  }
+
+  .mobile-carousel-control-container {
+    display: flex;
   }
 }

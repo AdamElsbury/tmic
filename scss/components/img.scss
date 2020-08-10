@@ -76,6 +76,15 @@ img {
   background-color: $color-green;
 }
 
+// TMIC Branding shape backgrounds
+
+.shape-bg-1 {
+  background-image: url(../assets/bg-shape-1-left.png), url(../assets/bg-shape-1-right.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
 // Benefit bar icons
 
 .benefit-icon {
@@ -92,10 +101,28 @@ img {
   max-width: 16px;
 }
 
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    max-width: 85px;
+  }
+}
+
 // Mobile
 
 @media screen and (max-width: 768px) {
   .benefit-icon {
     max-width: 50px;
+  }
+
+  .logo {
+    max-width: 65px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-bg {
+    background-image: url(../assets/hero-mobile.jpg);
   }
 }
