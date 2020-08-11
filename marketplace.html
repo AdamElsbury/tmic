@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="is-relative">
+  <section class="section is-padding-small notification-bar" id="notification">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-flex is-flex-between text-white">
+          <p class="text-white opacity-full">A direct benefit to the consumer goes here - a discount or free delivery</p>
+          <a href="#" class="text-white is-text-link">Learn More</a>
+          <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeNotification()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-hidden-desktop is-padding-small">
+    <div class="container">
+      <div class="columns is-mobile">
+        <article class="column is-flex is-flex-center">
+          <img src="assets/hamburger.svg" alt="A hamburger menu" class="mobile-top-nav-img" onclick="showMenu()">
+          <img src="assets/logo.png" alt="TMIC logo" class="ml-2 logo">
+        </article>
+        <article class="column is-flex is-flex-end-center">
+          <ul class="mobile-top-nav-ul">
+            <li class="pr-3"><a href="#"><div><img src="assets/find.svg" alt="A magnifying glass" class="mobile-top-nav-link-img"><p>Search</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/user.svg" alt="An icon indicating a login function" class="mobile-top-nav-link-img"><p>Login</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/heart.svg" alt="A heart" class="mobile-top-nav-link-img"><p>Fave</p></div></a></li>
+            <li><a href="#"><div><img src="assets/remove-from-cart.svg" alt="A shopping cart" class="mobile-top-nav-link-img"><p>Cart</p></div></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-menu-container is-hidden-desktop" id="menu">
+    <div class="mobile-menu-columns is-mobile">
+      <article class="mobile-menu-column-20 mobile-menu-close-container is-flex is-flex-justify-center">
+        <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeMenu()">
+      </article>
+      <article class="mobile-menu-column mobile-menu-links-container">
+        <article class="menu-links">
+          <ul>
+            <li><a href="#"><b>Sell With Us</b></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Meet The Makers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="mobile-social-container">
+            <img src="assets/instagram-sketched-white.svg" alt="Instagram Logo" class="social-favicon">
+            <img src="assets/facebook-white.svg" alt="Facebook logo" class="social-favicon ml-2">
+          </div>
+          <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only">Shop Now</button>
+        </article>
+      </article>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </div>
+        <div class="column is-flex is-flex-end">
+          <ul class="is-flex">
+            <li><a href="#" class="nav-link"><b>Sell With Us</b></a></li>
+            <li><a href="#" class="nav-link ml-6">About</a></li>
+            <li><a href="#" class="nav-link ml-6">Markets</a></li>
+            <li><a href="#" class="nav-link ml-6">Blog</a></li>
+            <li><a href="#" class="nav-link ml-6">Meet The Makers</a></li>
+            <li><a href="#" class="nav-link ml-6">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-small border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <a href=""><img src="assets/logo.png" alt="TMIC Logo" class="logo"></a>
+        </div>
+        <div class="column is-flex is-flex-end is-flex-center">
+          <form action="" class="relative mr-6">
+            <input type="text" class="search-input" placeholder="Search Products">
+            <input type="image" src="assets/find.svg" alt="submit" class="search-submit-img search-input-icon">
+          </form>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/user.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>LOG IN</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/heart.svg" alt="A heart" class="nav-link-img mr-2">
+              <p>WISHLIST</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority">
+            <div class="is-flex is-flex-center">
+              <img src="assets/remove-from-cart.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>CART</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ul class="is-flex is-flex-center">
+            <li><a href="#" class="nav-link"><div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Jewellery</span>
+                  <span class="icon is-small">
+                    <img src="assets/chevron.svg" alt="A chevron" class="nav-link-chevron ml-2">
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <ul>
+                      <li class="mb-3"><a href="#" class="nav-link">Rings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Earrings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Broaches</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Necklaces</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Bangles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link ml-6">Fashion <img src="assets/chevron.svg" alt="A chevron" class="nav-link-chevron ml-2"></a></li>
+          <li><a href="#" class="nav-link ml-6">Homewares <img src="assets/chevron.svg" alt="A chevron" class="nav-link-chevron ml-2"></a></li>
+          <li><a href="#" class="nav-link ml-6">Bags</a></li>
+          <li><a href="#" class="nav-link ml-6">For Kids</a></li>
+          <li><a href="#" class="nav-link ml-6">Art</a></li>
+          <li><a href="#" class="nav-link ml-6">Beauty & Skincare</a></li>
+          <li><a href="#" class="nav-link ml-6">Browse By Maker</a></li>
+          </ul>
+        </div>
+        <div class="column is-2 text-right is-flex is-flex-center">
+          <a href="#" class="nav-link-primary">Shop Fathers Day Gifts</a>
+        </div>
+      </div>
+    </div>
+  </section> <!-- End of header template -->
+
+  <section class="section">
+    <div class="container is-fluid">
+      <div class="columns">
+        <article class="column">
+          <div class="carousel-slide-1-marketplace is-flex is-flex-justify-center">
+            <div class="white-card">
+              <h3 class="small-pop-header mb-3">EVENT</h3>
+              <h2 class="page-header">Gifts perfect for him</h2>
+              <button class="btn-primary btn-bronze btn-mobile-full-width mt-3">Shop Now</button>
+            </div>
+          </div>
+        </article>
+        <article class="column">
+          <div class="carousel-slide-2-marketplace is-flex is-flex-justify-center">
+            <div class="white-card">
+              <h3 class="small-pop-header mb-3">DISCOUNTS</h3>
+              <h2 class="page-header">Gifts on sale</h2>
+              <button class="btn-primary btn-bronze btn-mobile-full-width mt-3">Shop Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-medium">
+    <div class="container is-fluid is-flex">
+      <div class="carousel-control-container is-flex is-flex-justify-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.655" height="13.001" viewBox="0 0 15.655 13.001">
+          <g id="left-arrow_1_" data-name="left-arrow (1)" transform="translate(15.654 54.675) rotate(180)">
+            <g id="Group_2" data-name="Group 2" transform="translate(0 41.674)">
+              <path id="Path_1" data-name="Path 1" d="M14.771,46.947l.024.005H4.323l3.292-3.3a.865.865,0,0,0,0-1.216L7.1,41.924a.857.857,0,0,0-1.21,0L.249,47.567a.863.863,0,0,0,0,1.214l5.644,5.644a.858.858,0,0,0,1.21,0l.512-.513a.848.848,0,0,0,.25-.6.822.822,0,0,0-.25-.593L4.286,49.4h10.5a.887.887,0,0,0,.868-.878V47.8a.87.87,0,0,0-.883-.85Z" transform="translate(0 -41.674)" fill="#343434"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="carousel-control-container is-flex is-flex-justify-center text-center ml-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.651" height="13" viewBox="0 0 15.651 13"><defs><style>.a{fill:#343434;}</style></defs><g transform="translate(0 -41.674)"><g transform="translate(0 41.674)"><path class="a" d="M14.771,46.947l.024.005H4.323l3.292-3.3a.865.865,0,0,0,0-1.216L7.1,41.924a.857.857,0,0,0-1.21,0L.249,47.567a.863.863,0,0,0,0,1.214l5.644,5.644a.858.858,0,0,0,1.21,0l.512-.513a.848.848,0,0,0,.25-.6.822.822,0,0,0-.25-.593L4.286,49.4h10.5a.887.887,0,0,0,.868-.878v-.725A.87.87,0,0,0,14.771,46.947Z" transform="translate(0 -41.674)"/></g></g></svg>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <section class="section blue-bg">
+    <div class="container is-small-container">
+      <div class="columns">
+        <article class="column">
+          <h4 class="small-pop-header text-white mb-3">SUBSCRIBE</h4>
+          <p class="sub-section-header text-white">Discounts, offers, business tips & tricks.</p>
+        </article>
+        <article class="column is-flex is-flex-center">
+          <form action="" class="">
+            <input type="text" placeholder="Enter your email" class="subscribe-input">
+            <input type="submit" class="btn-secondary btn-yellow-secondary ml-2 btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only" value="Subscribe">
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section padding-remove">
+      <div class="columns is-gapless is-mobile">
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline is-mobile">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <img src="assets/logo.png" alt="The make it collective logo" class="logo">
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Buy Handmade</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Jewellery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Fashion Accessories</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Homewares</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Bags</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">For Kids</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Art</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Beauty & Skincare</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">For The Makers</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Sell Online With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Store</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Market Stall</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Space For Hire</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Learn With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">FAQ</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">More Information</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">About Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Delivery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Return Policy</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Contact Us</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Socials</h4>
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </article>
+      </div>
+    </div>
+  </section>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>

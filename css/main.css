@@ -155,6 +155,9 @@ p {
 .is-padding-xs {
   padding: 5px 1.5rem 5px 1.5rem !important; }
 
+.is-padding-large-uniform {
+  padding: 170px; }
+
 .relative {
   position: relative; }
 
@@ -297,6 +300,20 @@ img {
 
 .mobile-top-nav-link-img {
   max-width: 16px; }
+
+.carousel-slide-1-marketplace {
+  background-image: url(../assets/ellen-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; }
+
+.carousel-slide-2-marketplace {
+  background-image: url(../assets/artem-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
@@ -537,6 +554,11 @@ button {
   width: 750px; }
   .hero-content p {
     width: 66%; }
+
+.white-card {
+  background-color: rgba(255, 255, 255, 0.84);
+  padding: 40px;
+  width: 50%; }
 
 .product-card:before {
   content: "";
