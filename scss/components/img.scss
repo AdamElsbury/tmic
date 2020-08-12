@@ -122,10 +122,10 @@ img {
 // Expanded img for CTA section
 
 .cta-expanded-img {
-  height: 450px;
+  height: 130%;
   position: absolute;
-  right: 150px;
-  top: -90px;
+  right: 15%;
+  top: -50px;
 }
 
 // Tablet
@@ -133,6 +133,19 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     max-width: 85px;
+  }
+
+  .cta-expanded-img {
+    height: 350px;
+    margin-bottom: -25px;
+  }
+
+  .carousel-slide-1-marketplace {
+    height: 350px;
+  }
+
+  .carousel-slide-2-marketplace {
+    height: 350px;
   }
 }
 
@@ -145,6 +158,19 @@ img {
 
   .logo {
     max-width: 65px;
+  }
+
+  .carousel-slide-1-marketplace {
+    background-image: url(../assets/ellen-hero.jpg);
+    height: 350px;
+  }
+
+  .cta-expanded-img {
+    height: 350px;
+    position: inherit;
+    right: auto;
+    bottom: auto;
+    margin-bottom: -25px;
   }
 }
 

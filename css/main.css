@@ -191,7 +191,16 @@ p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .mt-1-tablet-only {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+
+  .pl-150-px {
+    padding-left: 25px; }
+
+  .pl-remove-tablet {
+    padding-left: 0 !important; }
+
+  .pr-remove-tablet {
+    padding-right: 0 !important; } }
 @media screen and (max-width: 768px) {
   .is-padding-large {
     padding: 35px 1.5rem 35px 1.5rem !important; }
@@ -202,6 +211,9 @@ p {
   .mt-1-mobile-only {
     margin-top: 1rem; }
 
+  .padding-top-remove-mobile {
+    padding: 0 1.5rem 25px 1.5rem !important; }
+
   .is-padding-small-mobile {
     padding: 3rem 1rem !important; }
 
@@ -211,8 +223,11 @@ p {
   .is-padding-large {
     padding: 3rem 1rem !important; }
 
-  .section {
-    padding: 3rem 1rem; } }
+  .container.is-fluid {
+    padding: 0; }
+
+  .pl-150-px {
+    padding-left: 10px; } }
 .grid-container {
   display: grid;
   grid-gap: 25px; }
@@ -335,20 +350,41 @@ img {
   height: 500px; }
 
 .cta-expanded-img {
-  height: 450px;
+  height: 130%;
   position: absolute;
-  right: 150px;
-  top: -90px; }
+  right: 15%;
+  top: -50px; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
-    max-width: 85px; } }
+    max-width: 85px; }
+
+  .cta-expanded-img {
+    height: 350px;
+    margin-bottom: -25px; }
+
+  .carousel-slide-1-marketplace {
+    height: 350px; }
+
+  .carousel-slide-2-marketplace {
+    height: 350px; } }
 @media screen and (max-width: 768px) {
   .benefit-icon {
     max-width: 50px; }
 
   .logo {
-    max-width: 65px; } }
+    max-width: 65px; }
+
+  .carousel-slide-1-marketplace {
+    background-image: url(../assets/ellen-hero.jpg);
+    height: 350px; }
+
+  .cta-expanded-img {
+    height: 350px;
+    position: inherit;
+    right: auto;
+    bottom: auto;
+    margin-bottom: -25px; } }
 @media screen and (max-width: 450px) {
   .hero-bg {
     background-image: url(../assets/hero-mobile.jpg); } }
@@ -735,7 +771,11 @@ button {
 @media (min-width: 768px) and (max-width: 1024px) {
   .image-overlay-text {
     bottom: 147px;
-    right: 25px; } }
+    right: 25px; }
+
+  .white-card {
+    width: 90%;
+    padding: 15px; } }
 @media screen and (max-width: 768px) {
   .hero-content {
     width: 100%;
@@ -764,7 +804,11 @@ button {
     bottom: 0px; }
 
   .testimonial-card {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .white-card {
+    width: 90%;
+    padding: 15px; } }
 .is-small-container {
   max-width: 1152px !important; }
 

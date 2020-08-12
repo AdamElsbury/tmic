@@ -60,6 +60,18 @@
   .mt-1-tablet-only {
     margin-top: 1rem;
   }
+
+  .pl-150-px {
+    padding-left: 25px;
+  }
+
+  .pl-remove-tablet {
+    padding-left: 0 !important;
+  }
+
+  .pr-remove-tablet {
+    padding-right: 0 !important;
+  }
 }
 
 
@@ -78,6 +90,10 @@
     margin-top: 1rem;
   }
 
+  .padding-top-remove-mobile {
+    padding: 0 1.5rem 25px 1.5rem !important;
+  }
+
   .is-padding-small-mobile {
     padding: 3rem 1rem !important;
   }
@@ -90,7 +106,11 @@
     padding: 3rem 1rem !important;
   }
 
-  .section {
-    padding: 3rem 1rem;
+  .container.is-fluid {
+      padding: 0;
+    }
+
+  .pl-150-px {
+    padding-left: 10px;
   }
 }
