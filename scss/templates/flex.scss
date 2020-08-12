@@ -4,6 +4,12 @@
   display: flex;
 }
 
+.is-flex-column {
+  flex-direction: column;
+}
+
+//
+
 .is-flex-between {
   justify-content: space-between;
 }
@@ -40,4 +46,9 @@
 .is-flex-justify-center {
   justify-content: center;
   align-items: center;
+}
+
+.is-flex-column-between {
+  flex-direction: column;
+  justify-content: space-between;
 }
