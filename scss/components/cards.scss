@@ -190,26 +190,6 @@
   }
 }
 
-// Blog grid
-
-.blog-card {
-  position: relative;
-
-  &:before {
-    content: "";
-    width: 100%;
-    padding-top: 127%;
-    position: relative;
-    display: block;
-  }
-
-  .blog-card-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-  }
-}
 
 // Small div overlaying main images
 
