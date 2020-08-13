@@ -1,0 +1,30 @@
+// Breadcrumb SVG arrow
+
+.breadcrumb-arrow {
+  max-width: 16px;
+  transform: rotate(-90deg);
+  margin-bottom: 2px;
+}
+
+// Breadcrumb links
+
+.breadcrumb-active {
+  font-family: $text-family-body;
+  font-size: 12px;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb-inactive {
+  font-family: $text-family-body;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: .6;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
