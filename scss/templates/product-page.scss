@@ -169,3 +169,45 @@
     color: $color-white;
   }
 }
+
+.qty-span-container {
+  border: 2px solid $color-cobalt;
+  background-color: $color-white;
+}
+
+.qty-control {
+  height: 13px !important;
+  width: 13px !important;
+  cursor: pointer;
+}
+
+// product info carousel titles
+
+.product-info-carousel-title-active {
+  font-family: $text-family-body;
+  font-weight: 600;
+  font-size: 14px;
+  color: $color-cobalt;
+
+  &:after {
+    content: "";
+    margin-top: 1px;
+    height: 2px;
+    background-color: $color-cobalt;
+    width: 100%;
+    transition: width 200ms ease;
+    float: left;
+  }
+}
+
+.product-info-carousel-title-inactive {
+  font-family: $text-family-body;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: .6;
+  color: $color-cobalt;
+
+  &:hover {
+    opacity: 1;
+  }
+}

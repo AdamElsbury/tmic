@@ -87,6 +87,37 @@ button {
   cursor: pointer;
 }
 
+.btn-primary-no-pad {
+  font-family: $text-family-body;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 3px solid transparent;
+  padding: 13px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  min-width: 140px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-secondary-no-pad {
+  font-family: $text-family-body;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 13px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  outline: none;
+  cursor: pointer;
+}
+
+
 // Modifiers
 
 .fw {
@@ -135,7 +166,31 @@ button {
   }
 }
 
+.btn-bronze-no-pad {
+  border: 3px solid $color-bronze;
+  background-color: $color-bronze;
+  color: #FFF;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-bronze;
+  }
+}
+
+
 .btn-bronze-secondary {
+  border: 3px solid $color-bronze;
+  background-color: transparent;
+  color: $color-bronze;
+
+  &:hover {
+    background-color: $color-bronze;
+    border: 3px solid $color-bronze;
+    color: $color-white;
+  }
+}
+
+.btn-bronze-secondary-no-pad {
   border: 3px solid $color-bronze;
   background-color: transparent;
   color: $color-bronze;
