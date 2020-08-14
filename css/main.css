@@ -830,6 +830,11 @@ button {
 
   .mobile-carousel-control-container {
     display: flex; } }
+input[type=checkbox] {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px; }
+
 .std-form {
   width: 100%;
   padding: 0;
@@ -843,9 +848,6 @@ button {
     color: #000000;
     padding: 15px 25px 15px 25px;
     width: 100%; }
-  .std-form input[type=checkbox] {
-    height: 15px;
-    width: 15px; }
   .std-form textarea {
     border: 1px solid rgba(0, 0, 0, 0.8);
     background-color: #FFFFFF;
@@ -861,9 +863,10 @@ button {
       position: absolute;
       width: auto;
       height: auto;
-      max-width: 20px;
-      right: 15px;
-      top: calc(15px + 0.5rem); }
+      height: 12px;
+      width: 12px;
+      right: 25px;
+      top: calc(12px + 0.5rem); }
   .std-form select {
     border: 1px solid rgba(0, 0, 0, 0.8);
     background-color: #FFFFFF;
@@ -1062,6 +1065,13 @@ button {
   bottom: 66px;
   right: 25px; }
 
+.image-overlay-text-center-blue {
+  background-color: #517095;
+  padding: 16px 36px 16px 36px;
+  position: absolute;
+  bottom: -10px;
+  right: 50px; }
+
 .testimonial-card {
   background-color: #F6F6F6;
   padding: 32px; }
@@ -1143,5 +1153,42 @@ button {
   opacity: .6; }
   .breadcrumb-inactive:hover {
     text-decoration: underline; }
+
+.filter-container ul li {
+  padding: 20px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2); }
+
+.filter-accordion .filter-section {
+  display: none; }
+.filter-accordion .filter-accordion-control {
+  cursor: pointer; }
+  .filter-accordion .filter-accordion-control ::selection {
+    color: none;
+    background: none; }
+  .filter-accordion .filter-accordion-control img {
+    height: 12px;
+    width: 12px;
+    transition: all 100ms ease; }
+
+#filter-accordion-hidden ::selection {
+  color: none;
+  background: none; }
+
+.active-filters .af-bubble {
+  height: 30px;
+  width: auto;
+  padding: 10px;
+  background-color: #517095;
+  border-radius: 15px;
+  margin-right: 20px; }
+  .active-filters .af-bubble p {
+    color: #FFFFFF;
+    font-size: 12px;
+    opacity: 1; }
+  .active-filters .af-bubble img {
+    margin-left: 15px;
+    height: .5rem;
+    width: .5rem;
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

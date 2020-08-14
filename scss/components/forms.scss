@@ -1,4 +1,9 @@
 // Standard form
+input[type=checkbox] {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px;
+}
 
 .std-form {
   width: 100%;
@@ -14,11 +19,6 @@
     color: $color-black;
     padding: 15px 25px 15px 25px;
     width: 100%;
-  }
-
-  input[type=checkbox] {
-    height: 15px;
-    width: 15px;
   }
 
   textarea {
@@ -39,9 +39,10 @@
       position: absolute;
       width: auto;
       height: auto;
-      max-width: 20px;
-      right: 15px;
-      top: calc(15px + 0.5rem);
+      height: 12px;
+      width: 12px;
+      right: 25px;
+      top: calc(12px + 0.5rem);
     }
   }
 

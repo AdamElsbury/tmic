@@ -1,0 +1,62 @@
+.filter-container {
+  ul {
+    li {
+      padding: 20px 0;
+      border-bottom: .5px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.filter-accordion {
+  .filter-section {
+    display: none;
+  }
+
+  .filter-accordion-control {
+    cursor: pointer;
+
+    ::selection {
+      color: none;
+      background: none;
+    }
+
+    img {
+      height: 12px;
+      width: 12px;
+      transition: all 100ms ease;
+    }
+  }
+}
+
+#filter-accordion-hidden {
+  ::selection {
+    color: none;
+    background: none;
+  }
+}
+
+// Active filter bubbles
+
+.active-filters {
+  .af-bubble {
+    height: 30px;
+    width: auto;
+    padding: 10px;
+    background-color: #517095;
+    border-radius: 15px;
+    margin-right: 20px;
+
+    p {
+      color: $color-white;
+      font-size: 12px;
+      opacity: 1;
+    }
+
+    img {
+      margin-left: 15px;
+      height: .5rem;
+      width: .5rem;
+      cursor: pointer;
+    }
+  }
+}

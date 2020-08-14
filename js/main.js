@@ -15,3 +15,15 @@ function closeMenu() {
 function closeNotification() {
   document.getElementById("notification").style.display = "none";
 }
+
+function openCloseFilterAccordionContent() {
+  var x = document.getElementById("filter-accordion-hidden");
+  var y = document.getElementById("filter-accordion-chevron");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.transform = "rotate(180deg)";
+  } else {
+    x.style.display = "none";
+    y.style.transform = "rotate(0deg)";
+  }
+}

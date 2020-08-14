@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="is-relative">
+  <section class="section is-padding-xs notification-bar" id="notification">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-flex is-flex-between text-white">
+          <p class="text-white opacity-full">A direct benefit to the consumer goes here - a discount or free delivery</p>
+          <a href="#" class="text-white is-text-link">Learn More</a>
+          <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeNotification()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-hidden-desktop is-padding-small">
+    <div class="container">
+      <div class="columns is-mobile">
+        <article class="column is-flex is-flex-center">
+          <img src="assets/hamburger.svg" alt="A hamburger menu" class="mobile-top-nav-img" onclick="showMenu()">
+          <img src="assets/logo.png" alt="TMIC logo" class="ml-2 logo">
+        </article>
+        <article class="column is-flex is-flex-end-center">
+          <ul class="mobile-top-nav-ul">
+            <li class="pr-3"><a href="#"><div><img src="assets/find.svg" alt="A magnifying glass" class="mobile-top-nav-link-img"><p>Search</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/user.svg" alt="An icon indicating a login function" class="mobile-top-nav-link-img"><p>Login</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/heart.svg" alt="A heart" class="mobile-top-nav-link-img"><p>Fave</p></div></a></li>
+            <li><a href="#"><div><img src="assets/remove-from-cart.svg" alt="A shopping cart" class="mobile-top-nav-link-img"><p>Cart</p></div></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-menu-container is-hidden-desktop" id="menu">
+    <div class="mobile-menu-columns is-mobile">
+      <article class="mobile-menu-column-20 mobile-menu-close-container is-flex is-flex-justify-center">
+        <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeMenu()">
+      </article>
+      <article class="mobile-menu-column mobile-menu-links-container">
+        <article class="menu-links">
+          <ul>
+            <li><a href="#"><b>Sell With Us</b></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Meet The Makers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="mobile-social-container">
+            <img src="assets/instagram-sketched-white.svg" alt="Instagram Logo" class="social-favicon">
+            <img src="assets/facebook-white.svg" alt="Facebook logo" class="social-favicon ml-2">
+          </div>
+          <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only">Shop Now</button>
+        </article>
+      </article>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </div>
+        <div class="column is-flex is-flex-end">
+          <ul class="is-flex">
+            <li><a href="#" class="nav-link"><b>Sell With Us</b></a></li>
+            <li><a href="#" class="nav-link ml-6">About</a></li>
+            <li><a href="#" class="nav-link ml-6">Markets</a></li>
+            <li><a href="#" class="nav-link ml-6">Blog</a></li>
+            <li><a href="#" class="nav-link ml-6">Meet The Makers</a></li>
+            <li><a href="#" class="nav-link ml-6">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <a href=""><img src="assets/logo.png" alt="TMIC Logo" class="logo"></a>
+        </div>
+        <div class="column is-flex is-flex-end is-flex-center">
+          <form action="" class="relative mr-6">
+            <input type="text" class="search-input" placeholder="Search Products">
+            <input type="image" src="assets/find.svg" alt="submit" class="search-submit-img search-input-icon">
+          </form>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/user.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>LOG IN</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/heart.svg" alt="A heart" class="nav-link-img mr-2">
+              <p>WISHLIST</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority">
+            <div class="is-flex is-flex-center">
+              <img src="assets/remove-from-cart.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>CART</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-xxs desktop-nav border-bottom">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ul class="is-flex is-flex-center">
+            <li><a href="#" class="nav-link"><div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Jewellery</span>
+                  <span class="icon is-small">
+                    <img src="assets/chevron.svg" alt="A chevron" class="nav-link-chevron">
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <ul>
+                      <li class="mb-3"><a href="#" class="nav-link">Rings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Earrings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Broaches</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Necklaces</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Bangles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link ml-5">Fashion</a></li>
+          <li><a href="#" class="nav-link ml-5">Homewares</a></li>
+          <li><a href="#" class="nav-link ml-5">Bags</a></li>
+          <li><a href="#" class="nav-link ml-5">For Kids</a></li>
+          <li><a href="#" class="nav-link ml-5">Art</a></li>
+          <li><a href="#" class="nav-link ml-5">Beauty & Skincare</a></li>
+          <li><a href="#" class="nav-link ml-5">Browse By Maker</a></li>
+          </ul>
+        </div>
+        <div class="column is-2 text-right is-flex is-flex-center">
+          <a href="#" class="nav-link-primary">Shop Fathers Day Gifts</a>
+        </div>
+      </div>
+    </div>
+  </section> <!-- End of nav template -->
+
+  <main>
+    <section class="section is-padding-small">
+      <div class="container">
+        <article class="div">
+          <a href="#" class="breadcrumb-inactive text-cobalt">Home</a>
+          <img src="assets/chevron.svg" alt="An arrow pointing to the right" class="breadcrumb-arrow">
+          <a href="#" class="breadcrumb-active text-cobalt">Shop by Makers</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section padding-top-remove-mobile">
+      <div class="container green-paint-bg is-fluid">
+        <div class="is-padding-large text-center">
+          <h2 class="small-pop-header text-white">BROWSING in</h2>
+          <h1 class="page-header text-white">Shop by Makers</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <article class="column pr-6">
+            <h4 class="small-pop-header">SHOP BY BRAND</h4>
+            <h3 class="section-header">Visit our independent, talented maker's stores</h3>
+            <p>It's important to build relationships with brands. Everyone remembers the brand of their first pair of sneakers. We hope you find a maker you love!</p>
+          </article>
+          <article class="column is-two-thirds is-relative is-flex-end is-flex">
+            <img src="assets/ellen-landscape.jpg" alt="A man browsing in a store">
+            <article class="image-overlay-text-center-blue">
+              <p class="xs-pop-header text-white opacity-full">Get back to creating</p>
+            </article>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grey-bg">
+    <div class="container pb-6">
+      <div class="columns is-mobile">
+        <div class="column is-four-fifths">
+          <h3 class="section-header">Featured Makers</h3>
+        </div>
+        <div class="column is-flex-end-bottom is-flex">
+          <a href="#" class="btn-text-only">VIEW ALL</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-flex is-flex-center is-hidden-mobile">
+          <div class="carousel-control-container is-flex is-flex-justify-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.651" height="13" viewBox="0 0 15.651 13"><defs><style>.a{fill:#343434;}</style></defs><g transform="translate(0 -41.674)"><g transform="translate(0 41.674)"><path class="a" d="M14.771,46.947l.024.005H4.323l3.292-3.3a.865.865,0,0,0,0-1.216L7.1,41.924a.857.857,0,0,0-1.21,0L.249,47.567a.863.863,0,0,0,0,1.214l5.644,5.644a.858.858,0,0,0,1.21,0l.512-.513a.848.848,0,0,0,.25-.6.822.822,0,0,0-.25-.593L4.286,49.4h10.5a.887.887,0,0,0,.868-.878v-.725A.87.87,0,0,0,14.771,46.947Z" transform="translate(0 -41.674)"></path></g></g></svg>
+          </div>
+        </div>
+        <div class="column is-four-fifths">
+          <div class="columns is-variable is-4-desktop is-2-tablet is-mobile is-multiline">
+            <article class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+              <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+              <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+              <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <a href="#" class="btn-text-only">Go to store article <img src="assets/right-arrow-bronze.svg" alt="An arrow pointing to the right"></a>
+            </article>
+            <article class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+              <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+              <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+              <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <a href="#" class="btn-text-only">Go to store article <img src="assets/right-arrow-bronze.svg" alt="An arrow pointing to the right"></a>
+            </article>
+            <article class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+              <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+              <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+              <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <a href="#" class="btn-text-only">Go to store article <img src="assets/right-arrow-bronze.svg" alt="An arrow pointing to the right"></a>
+            </article>
+            <article class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+              <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+              <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+              <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <a href="#" class="btn-text-only">Go to store article <img src="assets/right-arrow-bronze.svg" alt="An arrow pointing to the right"></a>
+            </article>
+          </div>
+        </div>
+        <div class="column is-flex is-flex-end-center is-hidden-mobile">
+          <div class="carousel-control-container is-flex is-flex-justify-center text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.655" height="13.001" viewBox="0 0 15.655 13.001">
+              <g id="left-arrow_1_" data-name="left-arrow (1)" transform="translate(15.654 54.675) rotate(180)">
+                <g id="Group_2" data-name="Group 2" transform="translate(0 41.674)">
+                  <path id="Path_1" data-name="Path 1" d="M14.771,46.947l.024.005H4.323l3.292-3.3a.865.865,0,0,0,0-1.216L7.1,41.924a.857.857,0,0,0-1.21,0L.249,47.567a.863.863,0,0,0,0,1.214l5.644,5.644a.858.858,0,0,0,1.21,0l.512-.513a.848.848,0,0,0,.25-.6.822.822,0,0,0-.25-.593L4.286,49.4h10.5a.887.887,0,0,0,.868-.878V47.8a.87.87,0,0,0-.883-.85Z" transform="translate(0 -41.674)" fill="#343434"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-variable is-6 pt-5">
+        <article class="column is-one-fifth">
+          <div class="filter-container">
+            <ul>
+              <li class="filter-header is-flex is-flex-center"><img src="" alt=""><span class="xs-pop-header">FILTERS</span></li>
+              <li>
+                <div class="filter-section">
+                  <p class="xs-pop-header opacity-full mb-2"><b>General</b></p>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="onsale">On Sale</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="newarrivals">New Arrivals</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="mostpopular">Most Popular</label><input type="checkbox" class="ml-2">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-section">
+                  <p class="xs-pop-header opacity-full mb-2"><b>Maker Category</b></p>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="onsale">Jewellery</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="newarrivals">Fashion accessories</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="mostpopular">Homewares</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="mostpopular">Bags</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="mostpopular">Art</label><input type="checkbox" class="ml-2">
+                  </div>
+                  <div class="is-flex is-flex-center is-flex-between pb-1">
+                    <label for="mostpopular">Beauty & Skincare</label><input type="checkbox" class="ml-2">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="filter-accordion">
+                  <div onclick="openCloseFilterAccordionContent()" class="filter-accordion-control is-flex is-flex-between is-flex-center">
+                    <p class="xs-pop-header opacity-full"><b>Maker Category</b></p>
+                    <img src="assets/chevron.svg" alt="An arrow facing down" id="filter-accordion-chevron">
+                  </div>
+                    <div class="filter-section pt-4" id="filter-accordion-hidden">
+                      <p class="xs-pop-header opacity-full mb-2"><b>General</b></p>
+                      <div class="is-flex is-flex-center is-flex-between pb-1">
+                        <label for="onsale">On Sale</label><input type="checkbox" class="ml-2">
+                      </div>
+                      <div class="is-flex is-flex-center is-flex-between pb-1">
+                        <label for="newarrivals">New Arrivals</label><input type="checkbox" class="ml-2">
+                      </div>
+                      <div class="is-flex is-flex-center is-flex-between pb-1">
+                        <label for="mostpopular">Most Popular</label><input type="checkbox" class="ml-2">
+                      </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="column">
+          <div class="columns">
+            <div class="column is-one-third std-form">
+              <div class="select-img-position">
+                <select class="" name="war">
+                  <option value="" disabled="" selected="">Sort By</option>
+                  <option value="Maker">Date Added | Newest First</option>
+                  <option value="Customer">Date Added | Oldest First</option>
+                  <option value="Customer">Most Popular</option>
+                </select>
+                <img src="assets/chevron.svg" alt="">
+              </div>
+            </div>
+            <div class="column std-form">
+              <div class="select-img-position">
+                <input type="text" placeholder="Search Products">
+                <img src="assets/find.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="active-filters pl-2 pt-4">
+            <h6 class="sub-section-header">Active Filters</h6>
+            <div class="is-flex is-flex-center pt-2">
+              <div class="af-bubble is-flex is-flex-center is-flex-between">
+                <p>Price</p>
+                <img src="assets/close.svg" alt="">
+              </div>
+              <div class="af-bubble is-flex is-flex-center is-flex-between">
+                <p>Date Added</p>
+                <img src="assets/close.svg" alt="">
+              </div>
+              <div class="af-bubble is-flex is-flex-center is-flex-between">
+                <p>Price < $50</p>
+                <img src="assets/close.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline pt-6">
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+            <article class="column is-one-quarter">
+              <a href="">
+                <img src="assets/ellen-blog.png" alt="" class="fw-img mb-3">
+                <h5 class="sub-section-header mb-3">Artisan Glassware</h5>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </a>
+            </article>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  </main>
+
+
+<footer>
+  <section class="section blue-bg">
+    <div class="container is-small-container">
+      <div class="columns">
+        <article class="column">
+          <h4 class="small-pop-header text-white mb-3">SUBSCRIBE</h4>
+          <p class="sub-section-header text-white">Discounts, offers, business tips & tricks.</p>
+        </article>
+        <article class="column is-flex is-flex-center">
+          <form action="" class="">
+            <input type="text" placeholder="Enter your email" class="subscribe-input">
+            <input type="submit" class="btn-secondary btn-yellow-secondary ml-2 btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only" value="Subscribe">
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section padding-remove">
+      <div class="columns is-gapless is-mobile">
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline is-mobile">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <img src="assets/logo.png" alt="The make it collective logo" class="logo">
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Buy Handmade</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Jewellery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Fashion Accessories</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Homewares</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Bags</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">For Kids</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Art</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Beauty & Skincare</a></li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">For The Makers</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Sell Online With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Store</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Market Stall</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Space For Hire</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Learn With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">FAQ</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">More Information</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">About Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Delivery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Return Policy</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Contact Us</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Socials</h4>
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </article>
+      </div>
+    </div>
+  </section>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>
