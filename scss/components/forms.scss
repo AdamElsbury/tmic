@@ -1,3 +1,65 @@
+// Standard form
+
+.std-form {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  input[type=text] {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: $color-white;
+    font-family: $text-family-body;
+    font-size: 12px;
+    font-weight: 300;
+    color: $color-black;
+    padding: 15px 25px 15px 25px;
+    width: 100%;
+  }
+
+  input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+  }
+
+  textarea {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: $color-white;
+    font-family: $text-family-body;
+    font-size: 12px;
+    font-weight: 300;
+    color: $color-black;
+    padding: 15px 25px 15px 25px;
+    width: 100%;
+  }
+
+  .select-img-position {
+    position: relative;
+
+    img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-width: 20px;
+      right: 15px;
+      top: calc(15px + 0.5rem);
+    }
+  }
+
+  select {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: $color-white;
+    font-family: $text-family-body;
+    font-size: 12px;
+    font-weight: 300;
+    color: $color-black;
+    padding: 15px 25px 15px 25px;
+    width: 100%;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
 // Search input
 
 .search-input {

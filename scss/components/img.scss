@@ -79,6 +79,10 @@ img {
   background-color: #F8F8F8;
 }
 
+.white-bg {
+  background-color: $color-white;
+}
+
 // TMIC Branding shape backgrounds
 
 .shape-bg-1 {
@@ -125,7 +129,7 @@ img {
 // Expanded img for CTA section
 
 .cta-expanded-img {
-  height: 130%;
+  height: 158%;
   position: absolute;
   right: 15%;
   top: -50px;

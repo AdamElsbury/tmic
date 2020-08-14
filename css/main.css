@@ -85,6 +85,13 @@ p {
   font-weight: 700;
   line-height: 1.2em; }
 
+.cta-header {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  color: #343434;
+  font-weight: 700;
+  line-height: 1.2em; }
+
 .sub-section-header {
   font-family: "Amatic SC", cursive;
   font-size: 30px;
@@ -158,6 +165,9 @@ p {
     font-size: 13px; } }
 .is-padding-large-container {
   padding: 5px 3.5rem 5px 3.5rem !important; }
+
+.is-padding-xl {
+  padding: 150px 1.5rem 150px 1.5rem !important; }
 
 .is-padding-large {
   padding: 75px 1.5rem 75px 1.5rem !important; }
@@ -514,6 +524,9 @@ img {
 .grey-bg {
   background-color: #F8F8F8; }
 
+.white-bg {
+  background-color: #FFFFFF; }
+
 .shape-bg-1 {
   background-image: url(../assets/bg-shape-1-left.png), url(../assets/bg-shape-1-right.png);
   background-position: left, right;
@@ -543,7 +556,7 @@ img {
   height: 500px; }
 
 .cta-expanded-img {
-  height: 130%;
+  height: 158%;
   position: absolute;
   right: 15%;
   top: -50px; }
@@ -810,6 +823,53 @@ button {
 
   .mobile-carousel-control-container {
     display: flex; } }
+.std-form {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .std-form input[type=text] {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    padding: 15px 25px 15px 25px;
+    width: 100%; }
+  .std-form input[type=checkbox] {
+    height: 15px;
+    width: 15px; }
+  .std-form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    padding: 15px 25px 15px 25px;
+    width: 100%; }
+  .std-form .select-img-position {
+    position: relative; }
+    .std-form .select-img-position img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-width: 20px;
+      right: 15px;
+      top: calc(15px + 0.5rem); }
+  .std-form select {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    padding: 15px 25px 15px 25px;
+    width: 100%;
+    appearance: none;
+    position: relative;
+    cursor: pointer; }
+
 .search-input {
   border: 0.1px solid rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
@@ -1052,6 +1112,10 @@ button {
 
 .is-500-container {
   max-width: 500px !important; }
+
+.square-div-85 {
+  width: 85px;
+  height: 85px; }
 
 .breadcrumb-arrow {
   max-width: 16px;
