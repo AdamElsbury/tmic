@@ -173,11 +173,12 @@ img {
   }
 
   .cta-expanded-img {
-    height: 350px;
+    height: 300px;
     position: inherit;
+    display: block;
     right: auto;
     bottom: auto;
-    margin-bottom: -25px;
+    margin: 0 auto;
   }
 }
 

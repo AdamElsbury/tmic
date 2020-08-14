@@ -106,7 +106,7 @@
     padding: 0 !important;
   }
 
-  .is-padding-large {
+  .is-padding-large, .is-padding-xl {
     padding: 35px 1.5rem 35px 1.5rem !important;
   }
 
@@ -117,6 +117,15 @@
   .mt-1-mobile-only {
     margin-top: 1rem;
   }
+
+  .mt-2-mobile-only {
+    margin-top: 2rem;
+  }
+
+  .mt-3-mobile-only {
+    margin-top: 3rem !important;
+  }
+
 
   .padding-top-remove-mobile {
     padding: 0 1.5rem 25px 1.5rem !important;

@@ -236,7 +236,7 @@ p {
   .padding-remove-mobile {
     padding: 0 !important; }
 
-  .is-padding-large {
+  .is-padding-large, .is-padding-xl {
     padding: 35px 1.5rem 35px 1.5rem !important; }
 
   .ml-remove-mobile-only {
@@ -244,6 +244,12 @@ p {
 
   .mt-1-mobile-only {
     margin-top: 1rem; }
+
+  .mt-2-mobile-only {
+    margin-top: 2rem; }
+
+  .mt-3-mobile-only {
+    margin-top: 3rem !important; }
 
   .padding-top-remove-mobile {
     padding: 0 1.5rem 25px 1.5rem !important; }
@@ -586,11 +592,12 @@ img {
     height: 350px; }
 
   .cta-expanded-img {
-    height: 350px;
+    height: 300px;
     position: inherit;
+    display: block;
     right: auto;
     bottom: auto;
-    margin-bottom: -25px; } }
+    margin: 0 auto; } }
 @media screen and (max-width: 450px) {
   .hero-bg {
     background-image: url(../assets/hero-mobile.jpg); } }
