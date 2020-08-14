@@ -211,3 +211,43 @@
     opacity: 1;
   }
 }
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-img-main-container {
+    &:before {
+      padding-top: 100%;
+    }
+
+    .magnify-product {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .carousel-control-container-product {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .product-img-main-container {
+    &:before {
+      padding-top: 100%;
+    }
+
+    .magnify-product {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .carousel-control-container-product {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
