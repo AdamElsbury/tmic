@@ -162,7 +162,10 @@ p {
     max-width: 100%; }
 
   .small-pop-header {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .p-70 {
+    max-width: 100%; } }
 .is-padding-large-container {
   padding: 5px 3.5rem 5px 3.5rem !important; }
 
@@ -466,6 +469,43 @@ p {
   .product-img-main-container .carousel-control-container-product {
     bottom: 20px;
     right: 20px; } }
+.blog-tag-bubble {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 7px 12px;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  display: inline-block; }
+  .blog-tag-bubble span {
+    margin: 0 !important; }
+
+.social-share {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(179, 179, 179, 0.56);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(179, 179, 179, 0.56);
+  box-shadow: 0px 0px 22px 5px rgba(179, 179, 179, 0.56);
+  border-radius: 7px; }
+
+.alert-box {
+  padding: 35px;
+  border-radius: 7px;
+  width: 70%; }
+  .alert-box .alert-box-header {
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 7px; }
+    .alert-box .alert-box-header div {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: #F8D338; }
+
+@media screen and (max-width: 768px) {
+  .alert-box {
+    width: 100%; } }
 .notification-bar {
   background-color: #3B9189;
   padding: 17px 0 17px 0; }
@@ -547,6 +587,9 @@ img {
 .benefit-icon {
   max-width: 100px; }
 
+.blog-author-img {
+  max-width: 55px; }
+
 .mobile-top-nav-img {
   max-width: 35px; }
 
@@ -603,7 +646,8 @@ img {
     display: block;
     right: auto;
     bottom: auto;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    margin-bottom: -116px; } }
 @media screen and (max-width: 450px) {
   .hero-bg {
     background-image: url(../assets/hero-mobile.jpg); } }
@@ -720,6 +764,7 @@ button {
     margin: 3px 0 0 10px;
     transition: all 200ms ease-out; }
   .btn-text-only:hover {
+    text-decoration: underline;
     color: #CC5500; }
     .btn-text-only:hover img {
       margin-left: 25px; }

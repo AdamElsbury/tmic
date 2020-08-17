@@ -98,6 +98,12 @@ img {
   max-width: 100px;
 }
 
+// Blog portrait image
+
+.blog-author-img {
+  max-width: 55px;
+}
+
 // Mobile top nav
 
 .mobile-top-nav-img {
@@ -179,6 +185,7 @@ img {
     right: auto;
     bottom: auto;
     margin: 0 auto;
+    margin-bottom : -116px;
   }
 }
 
