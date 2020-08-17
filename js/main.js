@@ -28,6 +28,19 @@ function openCloseFilterAccordionContent() {
   }
 }
 
+function openCloseFilterAccordionContentMobile() {
+  var x = document.getElementById("filter-accordion-hidden-mobile");
+  var y = document.getElementById("filter-accordion-chevron-mobile");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.transform = "rotate(180deg)";
+  } else {
+    x.style.display = "none";
+    y.style.transform = "rotate(0deg)";
+  }
+}
+
+
 function openFilterMenu() {
   document.getElementById("filter-menu").style.opacity = "1";
   document.getElementById("filter-menu").style.zIndex = "2";
