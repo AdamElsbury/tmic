@@ -96,6 +96,10 @@
   .is-padding-20px-tablet {
     padding: 20px;
   }
+
+  .padding-top-remove-tablet {
+    padding-top: 0 !important;
+  }
 }
 
 
@@ -106,9 +110,12 @@
     padding: 0 !important;
   }
 
-  .is-padding-large, .is-padding-xl {
-    padding: 35px 1.5rem 35px 1.5rem !important;
+  .is-small-section-padding-mobile {
+    padding: 20px 1.5rem 20px 1.5rem !important;
   }
+
+  .is-padding-large, .is-padding-xl {
+    padding: 35px 1.5rem 35px 1.5rem !important;  }
 
   .ml-remove-mobile-only {
     margin-left: 0 !important;

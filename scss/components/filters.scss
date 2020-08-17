@@ -60,3 +60,60 @@
     }
   }
 }
+
+// Mobile
+
+@media screen and (max-width: 1024px) {
+  .filter-menu-container {
+    position: absolute;
+    top: -2000px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    max-width: 100vw;
+    background-color: rgba(52, 52, 52, 0.8);
+    opacity: 0;
+    transition: all 400ms ease;
+  }
+
+  .filter-menu-columns {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    .filter-menu-column-20 {
+      width: 20%;
+      flex: none;
+      height: 75px;
+      background-color: $color-white;
+    }
+
+    .filter-menu-column {
+      width: 80%;
+      flex: none;
+      background-color: $color-white;
+      height: 100vh;
+      padding: 25px;
+    }
+  }
+
+  .mobile-filter-filter {
+    button {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      background-color: #FFFFFF;
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: #000000;
+      padding: 15px 25px 15px 25px;
+      width: 100%;
+      appearance: none;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      outline: none;
+    }
+  }
+}

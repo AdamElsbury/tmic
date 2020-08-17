@@ -27,3 +27,17 @@ function openCloseFilterAccordionContent() {
     y.style.transform = "rotate(0deg)";
   }
 }
+
+function openFilterMenu() {
+  document.getElementById("filter-menu").style.opacity = "1";
+  document.getElementById("filter-menu").style.zIndex = "2";
+  document.getElementById("filter-menu").style.top = "0";
+  document.getElementById("filter-menu").style.position = "sticky";
+}
+
+function closeFilterMenu() {
+  document.getElementById("filter-menu").style.opacity = "0";
+  document.getElementById("filter-menu").style.zIndex = "-1";
+  document.getElementById("filter-menu").style.top = "-2000px";
+  document.getElementById("filter-menu").style.position = "absolute";
+}
