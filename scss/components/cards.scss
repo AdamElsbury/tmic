@@ -229,6 +229,23 @@
   }
 }
 
+// Blog cards
+
+.blog-card {
+  .blog-card-label {
+    background-color: $color-white;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 7px;
+
+    span {
+      margin: 0 !important;
+    }
+  }
+}
+
 // Laptop
 
 @media (min-width: 1366px) and (max-width: 1600px) {

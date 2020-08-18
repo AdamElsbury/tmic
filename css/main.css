@@ -1205,6 +1205,16 @@ input[type=checkbox] {
     height: auto;
     max-height: 160px; }
 
+.blog-card .blog-card-label {
+  background-color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 7px; }
+  .blog-card .blog-card-label span {
+    margin: 0 !important; }
+
 @media (min-width: 1366px) and (max-width: 1600px) {
   .white-card {
     width: 75%; } }
