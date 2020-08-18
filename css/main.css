@@ -616,6 +616,22 @@ img {
   right: 15%;
   top: -50px; }
 
+.a45-45-img-container {
+  max-height: 100%; }
+  .a45-45-img-container .a45-45-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 300px; }
+  .a45-45-img-container .a45-45-img-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    max-width: 300px; }
+
+.img-grid-img {
+  max-height: 250px; }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     max-width: 85px; }
