@@ -167,6 +167,13 @@ img {
   max-height: 250px;
 }
 
+// ACcordion chevron
+
+.accordion-chevron {
+  height: 10px;
+  transition: all 300ms ease;
+}
+
 // Tablet
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -185,6 +192,34 @@ img {
 
   .carousel-slide-2-marketplace {
     height: 350px;
+  }
+
+  .maker-img-inline-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .maker-img-inline {
+    width: 25%;
+  }
+
+  .a45-45-img-container {
+    max-height: 600px;
+    height: 400px;
+
+    .a45-45-img-top {
+      position: inherit;
+      top: auto;
+      left: auto;
+      max-width: 100%;
+    }
+
+    .a45-45-img-bottom {
+      position: inherit;
+      bottom: auto;
+      right: auto;
+      max-width: 45%;
+    }
   }
 }
 
@@ -212,6 +247,34 @@ img {
     bottom: auto;
     margin: 0 auto;
     margin-bottom : -116px;
+  }
+
+  .a45-45-img-container {
+    max-height: 600px;
+    height: 400px;
+
+    .a45-45-img-top {
+      position: absolute;
+      top: 12px;
+      left: 24px;
+      max-width: 55%;
+    }
+
+    .a45-45-img-bottom {
+      position: absolute;
+      bottom: 30px;
+      right: 24px;
+      max-width: 55%;
+    }
+  }
+
+  .maker-img-inline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .maker-img-inline {
+    width: 48%;
   }
 }
 

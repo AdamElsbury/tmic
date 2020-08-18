@@ -228,7 +228,10 @@ p {
     padding-right: 0 !important; }
 
   .pt-2-tablet {
-    padding-top: 2rem; }
+    padding-top: 2rem !important; }
+
+  .pb-2-tablet {
+    padding-bottom: 2rem !important; }
 
   .padding-remove-tablet {
     padding: 0 !important; }
@@ -237,7 +240,10 @@ p {
     padding: 20px; }
 
   .padding-top-remove-tablet {
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; }
+
+  .padding-top-remove-tablet {
+    padding: 0 1.5rem 25px 1.5rem !important; } }
 @media screen and (max-width: 768px) {
   .padding-remove-mobile {
     padding: 0 !important; }
@@ -262,6 +268,9 @@ p {
 
   .padding-top-remove-mobile {
     padding: 0 1.5rem 25px 1.5rem !important; }
+
+  .pt-1-mobile {
+    padding-top: 1rem !important; }
 
   .pt-2-mobile {
     padding-top: 2rem; }
@@ -632,6 +641,10 @@ img {
 .img-grid-img {
   max-height: 250px; }
 
+.accordion-chevron {
+  height: 10px;
+  transition: all 300ms ease; }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     max-width: 85px; }
@@ -644,7 +657,28 @@ img {
     height: 350px; }
 
   .carousel-slide-2-marketplace {
-    height: 350px; } }
+    height: 350px; }
+
+  .maker-img-inline-container {
+    display: flex;
+    justify-content: flex-start; }
+
+  .maker-img-inline {
+    width: 25%; }
+
+  .a45-45-img-container {
+    max-height: 600px;
+    height: 400px; }
+    .a45-45-img-container .a45-45-img-top {
+      position: inherit;
+      top: auto;
+      left: auto;
+      max-width: 100%; }
+    .a45-45-img-container .a45-45-img-bottom {
+      position: inherit;
+      bottom: auto;
+      right: auto;
+      max-width: 45%; } }
 @media screen and (max-width: 768px) {
   .benefit-icon {
     max-width: 50px; }
@@ -663,7 +697,28 @@ img {
     right: auto;
     bottom: auto;
     margin: 0 auto;
-    margin-bottom: -116px; } }
+    margin-bottom: -116px; }
+
+  .a45-45-img-container {
+    max-height: 600px;
+    height: 400px; }
+    .a45-45-img-container .a45-45-img-top {
+      position: absolute;
+      top: 12px;
+      left: 24px;
+      max-width: 55%; }
+    .a45-45-img-container .a45-45-img-bottom {
+      position: absolute;
+      bottom: 30px;
+      right: 24px;
+      max-width: 55%; }
+
+  .maker-img-inline-container {
+    display: flex;
+    justify-content: space-between; }
+
+  .maker-img-inline {
+    width: 48%; } }
 @media screen and (max-width: 450px) {
   .hero-bg {
     background-image: url(../assets/hero-mobile.jpg); } }
@@ -1206,6 +1261,17 @@ input[type=checkbox] {
 
 .max-height-240 {
   max-height: 240px; }
+
+.accordion-container {
+  cursor: pointer; }
+  .accordion-container ::selection {
+    color: none;
+    background: none; }
+  .accordion-container ::-moz-selection {
+    color: none;
+    background: none; }
+  .accordion-container #accordion-hidden {
+    display: none; }
 
 .breadcrumb-arrow {
   max-width: 16px;

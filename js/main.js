@@ -54,3 +54,15 @@ function closeFilterMenu() {
   document.getElementById("filter-menu").style.top = "-2000px";
   document.getElementById("filter-menu").style.position = "absolute";
 }
+
+function openCloseAccordionContent() {
+  var x = document.getElementById("accordion-hidden");
+  var y = document.getElementById("accordion-chevron");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.transform = "rotate(180deg)";
+  } else {
+    x.style.display = "none";
+    y.style.transform = "rotate(0deg)";
+  }
+}

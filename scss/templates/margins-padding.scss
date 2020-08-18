@@ -86,8 +86,13 @@
   }
 
   .pt-2-tablet {
-    padding-top: 2rem;
+    padding-top: 2rem !important;
   }
+
+  .pb-2-tablet {
+    padding-bottom: 2rem !important;
+  }
+
 
   .padding-remove-tablet {
     padding: 0 !important;
@@ -99,6 +104,10 @@
 
   .padding-top-remove-tablet {
     padding-top: 0 !important;
+  }
+
+  .padding-top-remove-tablet {
+    padding: 0 1.5rem 25px 1.5rem !important;
   }
 }
 
@@ -136,6 +145,10 @@
 
   .padding-top-remove-mobile {
     padding: 0 1.5rem 25px 1.5rem !important;
+  }
+
+  .pt-1-mobile {
+    padding-top: 1rem !important;
   }
 
   .pt-2-mobile {

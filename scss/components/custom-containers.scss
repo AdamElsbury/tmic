@@ -18,3 +18,23 @@
 .max-height-240 {
   max-height: 240px;
 }
+
+// Default Accordion
+
+.accordion-container {
+  cursor: pointer;
+
+  ::selection {
+    color: none;
+    background: none;
+  }
+
+  ::-moz-selection {
+    color: none;
+    background: none;
+  }
+
+  #accordion-hidden {
+    display: none;
+  }
+}
