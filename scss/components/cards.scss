@@ -157,6 +157,47 @@
   }
 }
 
+// Blog category tiles
+
+// Category tiles
+
+.blog-category-tile {
+  padding: 45px;
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-category-tile-1 {
+  background-image: url(../assets/digital-marketing.jpg);
+}
+
+.blog-category-tile-2 {
+  background-image: url(../assets/sales.jpg);
+}
+
+.blog-category-tile-3 {
+  background-image: url(../assets/business.jpg);
+}
+
+.blog-category-tile-4 {
+  background-image: url(../assets/resource-lists.jpg);
+}
+
+.blog-category-tile-5 {
+  background-image: url(../assets/materials.jpg);
+}
+
+.blog-category-tile-6 {
+  background-image: url(../assets/offline-tips.jpg);
+}
+
+.blog-category-tile-7 {
+  background-image: url(../assets/tutorials.jpg);
+}
+
+
 // Collection carousel
 
 .collection-card {
@@ -234,7 +275,7 @@
 .blog-card {
   .blog-card-label {
     background-color: $color-white;
-    padding: 10px;
+    padding: 5px 10px;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -320,5 +361,25 @@
   .white-card {
     width: 90%;
     padding: 15px;
+  }
+
+  .blog-card {
+    img {
+      height: 150px;
+    }
+
+    .blog-card-label {
+      background-color: $color-white;
+      padding: 5px 10px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 3px;
+
+      span {
+        margin: 0 !important;
+        font-size: 9px;
+      }
+    }
   }
 }

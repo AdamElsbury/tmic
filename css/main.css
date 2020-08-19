@@ -248,6 +248,9 @@ p {
   .padding-remove-mobile {
     padding: 0 !important; }
 
+  .margin-remove-mobile {
+    margin: 0 !important; }
+
   .is-small-section-padding-mobile {
     padding: 20px 1.5rem 20px 1.5rem !important; }
 
@@ -959,7 +962,6 @@ input[type=checkbox] {
 
 .std-form {
   width: 100%;
-  padding: 0;
   margin: 0; }
   .std-form input[type=text] {
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -1156,6 +1158,34 @@ input[type=checkbox] {
     line-height: 1.2em;
     opacity: 1; }
 
+.blog-category-tile {
+  padding: 45px;
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.blog-category-tile-1 {
+  background-image: url(../assets/digital-marketing.jpg); }
+
+.blog-category-tile-2 {
+  background-image: url(../assets/sales.jpg); }
+
+.blog-category-tile-3 {
+  background-image: url(../assets/business.jpg); }
+
+.blog-category-tile-4 {
+  background-image: url(../assets/resource-lists.jpg); }
+
+.blog-category-tile-5 {
+  background-image: url(../assets/materials.jpg); }
+
+.blog-category-tile-6 {
+  background-image: url(../assets/offline-tips.jpg); }
+
+.blog-category-tile-7 {
+  background-image: url(../assets/tutorials.jpg); }
+
 .collection-card {
   position: relative; }
   .collection-card:before {
@@ -1207,7 +1237,7 @@ input[type=checkbox] {
 
 .blog-card .blog-card-label {
   background-color: #FFFFFF;
-  padding: 10px;
+  padding: 5px 10px;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -1258,7 +1288,20 @@ input[type=checkbox] {
 
   .white-card {
     width: 90%;
-    padding: 15px; } }
+    padding: 15px; }
+
+  .blog-card img {
+    height: 150px; }
+  .blog-card .blog-card-label {
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px; }
+    .blog-card .blog-card-label span {
+      margin: 0 !important;
+      font-size: 9px; } }
 .is-small-container {
   max-width: 1152px !important; }
 
