@@ -170,4 +170,13 @@ p {
  .p-70 {
    max-width: 100%;
  }
+
+ p {
+   font-family: $text-family-body;
+   font-size: 14px;
+   color: $color-cobalt;
+   line-height: 27px;
+   opacity: .80;
+   font-weight: 300;
+ }
 }

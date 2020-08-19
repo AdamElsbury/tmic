@@ -168,7 +168,15 @@ p {
     font-size: 13px; }
 
   .p-70 {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #343434;
+    line-height: 27px;
+    opacity: .80;
+    font-weight: 300; } }
 .is-padding-large-container {
   padding: 5px 3.5rem 5px 3.5rem !important; }
 
@@ -590,7 +598,8 @@ img {
 .hero-bg {
   background-image: url(../assets/hero.jpg);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .green-paint-bg {
   background-image: url(../assets/green-paint-bg.jpg);
@@ -1263,7 +1272,7 @@ input[type=checkbox] {
   .blog-card .blog-card-label span {
     margin: 0 !important; }
 
-@media (min-width: 1366px) and (max-width: 1600px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
   .white-card {
     width: 75%; } }
 @media (min-width: 768px) and (max-width: 1024px) {
