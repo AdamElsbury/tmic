@@ -55,3 +55,11 @@
     display: none;
   }
 }
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+  .is-small-container {
+    max-width: 100% !important;
+  }
+}
