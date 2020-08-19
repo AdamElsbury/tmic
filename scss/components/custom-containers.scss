@@ -6,11 +6,28 @@
   max-width: 500px !important;
 }
 
+.is-300-container {
+  max-width: 300px !important;
+}
+
+
+.is-margin-0-auto {
+  margin: 0 auto;
+}
+
 // Square divs
 
 .square-div-85 {
   width: 85px;
   height: 85px;
+}
+
+// Circular divs
+
+.circle-div-40 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 // Max height

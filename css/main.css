@@ -36,6 +36,9 @@
   flex-direction: column;
   justify-content: space-between; }
 
+.is-flex-item-bottom {
+  margin-top: auto; }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .is-flex-column-tablet {
     flex-direction: column; } }
@@ -189,6 +192,9 @@ p {
 
 .is-padding-30px {
   padding: 30px; }
+
+.is-padding-50px {
+  padding: 50px; }
 
 .is-padding-medium-uniform {
   padding: 100px; }
@@ -1050,7 +1056,7 @@ input[type=checkbox] {
 .hero-content {
   background-color: rgba(255, 255, 255, 0.84);
   padding: 60px;
-  width: 750px; }
+  max-width: 60%; }
   .hero-content p {
     width: 66%; }
 
@@ -1316,9 +1322,20 @@ input[type=checkbox] {
 .is-500-container {
   max-width: 500px !important; }
 
+.is-300-container {
+  max-width: 300px !important; }
+
+.is-margin-0-auto {
+  margin: 0 auto; }
+
 .square-div-85 {
   width: 85px;
   height: 85px; }
+
+.circle-div-40 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; }
 
 .max-height-240 {
   max-height: 240px; }

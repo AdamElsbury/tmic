@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="is-relative">
+  <section class="section is-padding-xs notification-bar" id="notification">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-flex is-flex-between text-white">
+          <p class="text-white opacity-full">A direct benefit to the consumer goes here - a discount or free delivery</p>
+          <a href="#" class="text-white is-text-link">Learn More</a>
+          <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeNotification()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-hidden-desktop is-padding-small">
+    <div class="container">
+      <div class="columns is-mobile">
+        <article class="column is-flex is-flex-center">
+          <img src="assets/hamburger.svg" alt="A hamburger menu" class="mobile-top-nav-img" onclick="showMenu()">
+          <img src="assets/logo.png" alt="TMIC logo" class="ml-2 logo">
+        </article>
+        <article class="column is-flex is-flex-end-center">
+          <ul class="mobile-top-nav-ul">
+            <li class="pr-3"><a href="#"><div><img src="assets/find.svg" alt="A magnifying glass" class="mobile-top-nav-link-img"><p>Search</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/user.svg" alt="An icon indicating a login function" class="mobile-top-nav-link-img"><p>Login</p></div></a></li>
+            <li class="pr-3"><a href="#"><div><img src="assets/heart.svg" alt="A heart" class="mobile-top-nav-link-img"><p>Fave</p></div></a></li>
+            <li><a href="#"><div><img src="assets/remove-from-cart.svg" alt="A shopping cart" class="mobile-top-nav-link-img"><p>Cart</p></div></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-menu-container is-hidden-desktop" id="menu">
+    <div class="mobile-menu-columns is-mobile">
+      <article class="mobile-menu-column-20 mobile-menu-close-container is-flex is-flex-justify-center">
+        <img src="assets/close.svg" alt="A close icon" class="close" onclick="closeMenu()">
+      </article>
+      <article class="mobile-menu-column mobile-menu-links-container">
+        <article class="menu-links">
+          <ul>
+            <li><a href="#"><b>Sell With Us</b></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Meet The Makers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="mobile-social-container">
+            <img src="assets/instagram-sketched-white.svg" alt="Instagram Logo" class="social-favicon">
+            <img src="assets/facebook-white.svg" alt="Facebook logo" class="social-favicon ml-2">
+          </div>
+          <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only">Shop Now</button>
+        </article>
+      </article>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </div>
+        <div class="column is-flex is-flex-end">
+          <ul class="is-flex">
+            <li><a href="#" class="nav-link"><b>Sell With Us</b></a></li>
+            <li><a href="#" class="nav-link ml-6">About</a></li>
+            <li><a href="#" class="nav-link ml-6">Markets</a></li>
+            <li><a href="#" class="nav-link ml-6">Blog</a></li>
+            <li><a href="#" class="nav-link ml-6">Meet The Makers</a></li>
+            <li><a href="#" class="nav-link ml-6">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-xs border-bottom desktop-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <a href=""><img src="assets/logo.png" alt="TMIC Logo" class="logo"></a>
+        </div>
+        <div class="column is-flex is-flex-end is-flex-center">
+          <form action="" class="relative mr-6">
+            <input type="text" class="search-input" placeholder="Search Products">
+            <input type="image" src="assets/find.svg" alt="submit" class="search-submit-img search-input-icon">
+          </form>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/user.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>LOG IN</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority mr-6">
+            <div class="is-flex is-flex-center">
+              <img src="assets/heart.svg" alt="A heart" class="nav-link-img mr-2">
+              <p>WISHLIST</p>
+            </div>
+          </a>
+          <a href="" class="nav-link-priority">
+            <div class="is-flex is-flex-center">
+              <img src="assets/remove-from-cart.svg" alt="An outline of a person" class="nav-link-img mr-2">
+              <p>CART</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-padding-xxs desktop-nav border-bottom">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ul class="is-flex is-flex-center">
+            <li><a href="#" class="nav-link"><div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Jewellery</span>
+                  <span class="icon is-small">
+                    <img src="assets/chevron.svg" alt="A chevron" class="nav-link-chevron">
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <ul>
+                      <li class="mb-3"><a href="#" class="nav-link">Rings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Earrings</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Broaches</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Necklaces</a></li>
+                      <li class="mb-3"><a href="#" class="nav-link">Bangles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link ml-5">Accessories</a></li>
+          <li><a href="#" class="nav-link ml-5">Home</a></li>
+          <li><a href="#" class="nav-link ml-5">Kids</a></li>
+          <li><a href="#" class="nav-link ml-5">Body & Beauty</a></li>
+          <li><a href="#" class="nav-link ml-5">Fashion</a></li>
+          <li><a href="#" class="nav-link ml-5">Pantry</a></li>
+          <li><a href="#" class="nav-link ml-5">Art & Prints</a></li>
+          <li><a href="#" class="nav-link ml-5">Browse By Maker</a></li>
+          </ul>
+        </div>
+        <div class="column is-2 text-right is-flex is-flex-center">
+          <a href="#" class="nav-link-primary">Shop Fathers Day Gifts</a>
+        </div>
+      </div>
+    </div>
+  </section> <!-- End of nav template -->
+
+<main>
+  <section class="section hero-bg is-padding-small-mobile">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="small-pop-header mb-3">looking to sell?</h1>
+        <h2 class="page-header">Sell your products on your own store page or at our offline oppurtunities</h2>
+        <p class="mt-4 mb-5">We handle the day to day running of your store so you can focus on what got you here in the first place - A passion for creating. No more websites, order tracking or booking market space. Let us take a load off.</p>
+        <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only">Create Account</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section green-paint-bg is-padding-small">
+    <div class="container">
+      <div class="columns is-multiline is-mobile is-8-desktop is-2-tablet is-variable is-1-mobile">
+        <div class="column is-flex is-flex-center is-half-mobile">
+          <img src="assets/shopping-bag.png" alt="A shopping bag" class="benefit-icon">
+          <p class="benefit-header ml-4 opacity-full">A place for your store to live, online & offline</p>
+        </div>
+        <div class="column is-flex is-flex-center is-half-mobile">
+          <img src="assets/community-icon.png" alt="A community of people talking" class="benefit-icon">
+          <p class="benefit-header ml-4 opacity-full">We have carefully crafted a professional community</p>
+        </div>
+        <div class="column is-flex is-flex-center is-half-mobile">
+          <img src="assets/tutorials.png" alt="A man holding a youtube video card" class="benefit-icon">
+          <p class="benefit-header ml-4 opacity-full">Business & Marketing educational content</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section padding-top-remove-mobile padding-top-remove-tablet">
+      <div class="container">
+        <div class="columns">
+          <article class="column pr-6 is-half-tablet is-one-third-desktop">
+            <h4 class="small-pop-header">here to help</h4>
+            <h3 class="section-header">We also help offline businesses</h3>
+            <p class="mt-3 mb-3">The Make It Collective has so many different opportunities for the makers who aren't ready to create an online store.</p>
+            <button class="btn-secondary btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only">Find Out More</button>
+          </article>
+          <article class="column is-two-thirds-desktop is-flex-end is-flex">
+            <div class="is-relative max-height-240">
+              <img src="assets/ellen-landscape.jpg" alt="A man browsing in a store">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <article class="column">
+            <div class="is-500-container is-margin-0-auto text-center">
+            <h4 class="sub-section-header mb-5">Trusted by over 200 independent makers from Jewellers to Beauty & Skincare</h4>
+            <div class="columns">
+              <article class="column">
+                <img src="assets/mint-sugar.png" alt="The logo for mint sugar">
+              </article>
+              <article class="column">
+                <img src="assets/mint-sugar.png" alt="The logo for mint sugar">
+              </article>
+              <article class="column">
+                <img src="assets/mint-sugar.png" alt="The logo for mint sugar">
+              </article>
+              <article class="column">
+                <img src="assets/mint-sugar.png" alt="The logo for mint sugar">
+              </article>
+              <article class="column">
+                <img src="assets/mint-sugar.png" alt="The logo for mint sugar">
+              </article>
+            </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns pb-5">
+          <article class="column">
+            <h4 class="small-pop-header">we love small business</h4>
+            <h3 class="section-header">Why sell at The Make It Collective?</h3>
+          </article>
+        </div>
+        <div class="columns is-variable is-6-desktop is-multiline">
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-1.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">Create an online store in our Makers Marketplace</h5>
+              </article>
+            </div>
+            <p>Create an online store page within our online maker community & immediately get set up with shipping, payments & optimisation handled by us, ready to go</p>
+          </article>
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-2.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">Get featured in high traffic sections of our website</h5>
+              </article>
+            </div>
+            <p>Get more eyeballs on your products by paying for subscription packages to appear in our featured products & collections sections on our homepage. Its targeted marketing!</p>
+          </article>
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-3.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">Join a community of like minded business owners</h5>
+              </article>
+            </div>
+            <p>Have access to hundreds of other creators to share tips, tricks or provide support. Everything is easier with community.</p>
+          </article>
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-4.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">Free business & marketing content</h5>
+              </article>
+            </div>
+            <p>Having a subscription with us gives you access to our library of blog posts, informationals & business/marketing content to increase your sales & revenue</p>
+          </article>
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-5.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">We love supporting independent creators</h5>
+              </article>
+            </div>
+            <p>Our mission is to provide an environment that helps your business launch & grow. We do not just take your subscription & leave you alone. We will be with you every step of the way.</p>
+          </article>
+          <article class="column is-one-third-desktop">
+            <div class="columns">
+              <article class="column">
+                <img src="assets/why-sell-6.png" alt="A shopping bag">
+              </article>
+              <article class="column is-three-quarters">
+                <h5 class="sub-section-header">Set up a stall at our offline markets</h5>
+              </article>
+            </div>
+            <p>Our service isn't just online. We hold regular in person markets & being a part of our family gives you access to hosting a stall as part of our collective.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-padding-xl">
+    <div class="container green-paint-bg is-padding-medium">
+      <div class="columns">
+        <article class="column pl-150-px pt-4 pb-4">
+          <h4 class="cta-header text-white mb-3">Are you a maker?</h4>
+          <p class="mb-5 text-white">Get your own Meet the Maker page to showcase your story, open an online store &amp; join our community today!</p>
+          <button class="btn-primary btn-bronze btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only">Create Account</button>
+        </article>
+        <article class="column is-relative">
+          <img src="assets/about-collective.png" alt="Several Pictures of makers from The Make It Collective" class="cta-expanded-img mt-3-mobile-only">
+        </article>
+      </div>
+    </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <article class="column">
+            <h3 class="small-pop-header">OUR PROCESS</h3>
+            <h4 class="section-header">So how does getting set up work?</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grey-bg is-padding-50px">
+        <div class="columns">
+          <article class="column is-one-quarter">
+            <h3 class="section-header">Build</h3>
+            <p class="mb-5">Register & build your store with our easy to use sign up pages</p>
+            <div class="white-bg is-padding-30px">
+              <h5 class="sub-section-header">Maker store title 1</h5>
+              <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"</p>
+              <div class="columns is-mobile pt-2">
+                <article class="column is-flex is-flex-justify-center">
+                  <div>
+                    <img src="assets/courtney.png" alt="" class="fw-img">
+                  </div>
+                </article>
+                <article class="column is-four-fifths">
+                  <p class="p-mini opacity-full"><b>Jackie Davies</b></p>
+                  <p class="p-mini opacity-50">CEO</p>
+                </article>
+              </div>
+            </div>
+          </article>
+          <article class="column pl-6">
+            <img src="assets/build.jpg" alt="A person typing on a laptop">
+            <div class="columns pt-6">
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">1</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Create a store page</h6>
+                  </article>
+                </div>
+                <p>Register your details on our website. Email, tax numbers, addresses. That sort of thing.</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">2</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Tell your story</h6>
+                  </article>
+                </div>
+                <p>Create a story on your page to let your consumers know who you are. The brains behind the products.</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">3</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Add your products</h6>
+                  </article>
+                </div>
+                <p>Upload your product descriptions, prices & images.</p>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grey-bg is-padding-50px">
+        <div class="columns">
+          <article class="column is-one-quarter">
+            <h3 class="section-header">Market</h3>
+            <p class="mb-5">Choose your subscription package to help get your products seen on our marketplace</p>
+            <div class="white-bg is-padding-30px">
+              <h5 class="sub-section-header">Maker store title 1</h5>
+              <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"</p>
+              <div class="columns is-mobile pt-2">
+                <article class="column is-flex is-flex-justify-center">
+                  <div>
+                    <img src="assets/courtney.png" alt="" class="fw-img">
+                  </div>
+                </article>
+                <article class="column is-four-fifths">
+                  <p class="p-mini opacity-full"><b>Jackie Davies</b></p>
+                  <p class="p-mini opacity-50">CEO</p>
+                </article>
+              </div>
+            </div>
+          </article>
+          <article class="column pl-6">
+            <img src="assets/market.jpg" alt="A screen with financial information">
+            <div class="columns pt-6">
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">1</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Pick a subscription</h6>
+                  </article>
+                </div>
+                <p>We have a few subscription options to choose from to help get your products seen on our platform</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">2</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Appear in high traffic sections</h6>
+                  </article>
+                </div>
+                <p>Have your products show up in our featured sections on our entire website & get more eyeballs on your products</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">3</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Have your own Meet the Maker post</h6>
+                  </article>
+                </div>
+                <p class="mb-3">Have your dedicated story on our collection page to let consumers get to know your brand intimately</p>
+                <a href="#" class="btn-text-only">Learn More <img src="assets/right-arrow-bronze.svg" alt="An arrow pointing to the right"></a>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grey-bg is-padding-50px">
+        <div class="columns">
+          <article class="column is-one-quarter">
+            <h3 class="section-header">Grow</h3>
+            <p class="mb-5">See your sales & business grow with help from The Make It Collective</p>
+            <div class="white-bg is-padding-30px">
+              <h5 class="sub-section-header">Maker store title 1</h5>
+              <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"</p>
+              <div class="columns is-mobile pt-2">
+                <article class="column is-flex is-flex-justify-center">
+                  <div>
+                    <img src="assets/courtney.png" alt="" class="fw-img">
+                  </div>
+                </article>
+                <article class="column is-four-fifths">
+                  <p class="p-mini opacity-full"><b>Jackie Davies</b></p>
+                  <p class="p-mini opacity-50">CEO</p>
+                </article>
+              </div>
+            </div>
+          </article>
+          <article class="column pl-6">
+            <img src="assets/grow.jpg" alt="A screen with financial information">
+            <div class="columns pt-6">
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">1</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">See your business flourish</h6>
+                  </article>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">2</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Participate in the community</h6>
+                  </article>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </article>
+              <article class="column">
+                <div class="columns">
+                  <article class="column is-one-quarter">
+                    <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                      <p class="text-white opacity-full">3</p>
+                    </div>
+                  </article>
+                  <article class="column">
+                    <h6 class="sub-section-header">Lorem ipsum dolor sit amet, consetetur</h6>
+                  </article>
+                </div>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section padding-top-remove-mobile padding-top-remove-tablet">
+      <div class="container">
+        <div class="columns">
+          <article class="column pr-6 pr-remove-mobile is-half-tablet is-one-third-desktop">
+            <h4 class="small-pop-header">Additional support</h4>
+            <h3 class="section-header mb-4">Offline sales opportunities & Educational materials</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+          </article>
+          <article class="column is-flex is-flex-center">
+            <div class="columns is-multiline is-mobile is-variable is-2-mobile">
+              <article class="column is-half-tablet is-one-quarter-desktop">
+                <img src="assets/offline-tips.jpg" alt="A woman holdi" class="fw-img">
+              </article>
+              <article class="column is-half-tablet is-one-quarter-desktop">
+                <img src="assets/resource-lists.jpg" alt="A woman holdi" class="fw-img">
+              </article>
+              <article class="column is-half-tablet is-one-quarter-desktop is-hidden-tablet-only">
+                <img src="assets/sales.jpg" alt="A woman holdi" class="fw-img">
+              </article>
+              <article class="column is-half-tablet is-one-quarter-desktop is-hidden-tablet-only is-hidden-mobile">
+                <img src="assets/tutorials.jpg" alt="A woman holdi" class="fw-img">
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-small-container">
+        <div class="columns">
+          <article class="column">
+            <div class="is-300-container text-center is-margin-0-auto">
+              <h3 class="section-header">Offline</h3>
+              <p>Take advantage of our offline features to take your sales to the next level</p>
+            </div>
+          </article>
+        </div>
+        <div class="columns is-variable is-6">
+          <div class="columns pt-6">
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">1</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Brick & mortar shop in Melbourne</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw mt-4">Find Out More</button>
+            </article>
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">2</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Popup Stores</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary is-flex-item-bottom btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw">Find Out More</button>
+            </article>
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">3</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Sell at our offline markets</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary is-flex-item-bottom btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw">Find Out More</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-small-container">
+        <div class="columns">
+          <article class="column">
+            <div class="is-300-container text-center is-margin-0-auto">
+              <h3 class="section-header">Educate</h3>
+              <p>Take advantage of our educational materials to take your sales to the next level</p>
+            </div>
+          </article>
+        </div>
+        <div class="columns is-variable is-6">
+          <div class="columns pt-6">
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">1</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Join our Facebook group</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw mt-4">Join Group</button>
+            </article>
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">2</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Online education portal</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary is-flex-item-bottom btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw">Find out more</button>
+            </article>
+            <article class="column is-flex is-flex-column">
+              <div class="columns">
+                <article class="column is-one-fifth">
+                  <div class="circle-div-40 green-bg is-flex is-flex-justify-center">
+                    <p class="text-white opacity-full">3</p>
+                  </div>
+                </article>
+                <article class="column">
+                  <h6 class="sub-section-header">Educational blog posts</h6>
+                </article>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+              <button class="btn-secondary is-flex-item-bottom btn-bronze-secondary btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only mt-1-tablet-only fw">Go to blog</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+</main>
+
+
+<footer>
+  <section class="section blue-bg">
+    <div class="container is-small-container">
+      <div class="columns">
+        <article class="column">
+          <h4 class="small-pop-header text-white mb-3">SUBSCRIBE</h4>
+          <p class="sub-section-header text-white">Discounts, offers, business tips & tricks.</p>
+        </article>
+        <article class="column is-flex is-flex-center">
+          <form action="" class="">
+            <input type="text" placeholder="Enter your email" class="subscribe-input">
+            <input type="submit" class="btn-secondary btn-yellow-secondary ml-2 btn-mobile-full-width ml-remove-mobile-only mt-1-mobile-only" value="Subscribe">
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section padding-remove">
+      <div class="columns is-gapless is-mobile">
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/2.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/3.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/4.jpg" alt="">
+        </article>
+        <article class="column instagram-carousel-tile is-hidden-tablet-only is-hidden-mobile">
+          <img src="assets/5.jpg" alt="">
+        </article>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline is-mobile">
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <img src="assets/logo.png" alt="The make it collective logo" class="logo">
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Buy Handmade</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Jewellery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Fashion Accessories</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Homewares</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Bags</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">For Kids</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Art</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Beauty & Skincare</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">For The Makers</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">Sell Online With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Store</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Sell In Our Market Stall</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Space For Hire</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Learn With Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">FAQ</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">More Information</h4>
+          <ul class="footer-link-ul">
+            <li><a href="#" class="is-text-link text-cobalt">About Us</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Delivery</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Return Policy</a></li>
+            <li><a href="#" class="is-text-link text-cobalt">Contact Us</a></li>
+            </li>
+          </ul>
+        </article>
+        <article class="column is-one-quarter-tablet is-one-fifth-desktop is-half-mobile">
+          <h4 class="sub-section-header mb-5">Socials</h4>
+          <img src="assets/instagram-sketched.svg" alt="Instagram Logo" class="social-favicon">
+          <img src="assets/facebook.svg" alt="Facebook logo" class="social-favicon ml-2">
+        </article>
+      </div>
+    </div>
+  </section>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>
