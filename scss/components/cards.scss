@@ -364,8 +364,12 @@
   }
 
   .blog-card {
+
+    p {
+      font-size: 12px;
+    }
     img {
-      height: 150px;
+      max-height: 150px;
     }
 
     .blog-card-label {
