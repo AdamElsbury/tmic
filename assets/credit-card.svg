@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.458" height="90.762" viewBox="0 0 98.458 90.762">
+  <g id="credit-card" transform="translate(-611.401 -749.783)">
+    <path id="Path_13" data-name="Path 13" d="M25.593,0C39.727,0,51.186,24.007,51.186,38.142A25.593,25.593,0,0,1,0,38.142C0,24.007,11.458,0,25.593,0Z" transform="translate(675.609 749.783) rotate(48)" fill="#3b9189" opacity="0.8"/>
+    <g id="credit-card_3_" data-name="credit-card (3)" transform="translate(611.401 790.339)">
+      <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+        <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+          <path id="Path_1" data-name="Path 1" d="M72.019,107.7,61.58,81.659a5.755,5.755,0,0,0-7.6-3.252L28.907,88.448H5.847A5.855,5.855,0,0,0,0,94.295v28.052a5.855,5.855,0,0,0,5.847,5.847h49.1a5.855,5.855,0,0,0,5.847-5.847V118.5l7.972-3.195A5.786,5.786,0,0,0,72.019,107.7Zm-13.562,14.66a3.524,3.524,0,0,1-3.508,3.508H5.847a3.506,3.506,0,0,1-3.508-3.508V104.82H58.457Zm0-19.88H2.339V97.8H58.457Zm0-7.016H2.339V94.295a3.506,3.506,0,0,1,3.508-3.508h49.1a3.506,3.506,0,0,1,3.508,3.508Zm9.441,17.67-7.1,2.838V94.295a5.855,5.855,0,0,0-5.847-5.847H35.2l19.652-7.872a3.478,3.478,0,0,1,4.564,1.954L69.851,108.57A3.61,3.61,0,0,1,67.9,113.134Z" transform="translate(0 -77.988)"/>
+        </g>
+      </g>
+      <g id="Group_8" data-name="Group 8" transform="translate(5.847 32.679)">
+        <g id="Group_7" data-name="Group 7">
+          <rect id="Rectangle_2" data-name="Rectangle 2" width="15.202" height="2.339"/>
+        </g>
+      </g>
+      <g id="Group_10" data-name="Group 10" transform="translate(5.847 40.865)">
+        <g id="Group_9" data-name="Group 9" transform="translate(0 0)">
+          <rect id="Rectangle_3" data-name="Rectangle 3" width="23.388" height="2.339"/>
+        </g>
+      </g>
+      <g id="Group_12" data-name="Group 12" transform="translate(40.915 36.187)">
+        <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
+          <path id="Path_2" data-name="Path 2" d="M296.255,331.734a4.65,4.65,0,0,0-2.339.642,4.678,4.678,0,1,0,0,8.072,4.672,4.672,0,1,0,2.339-8.714Zm0,7.017a3.457,3.457,0,0,1-2.339-1.312,3.586,3.586,0,0,1-2.339,1.312,2.339,2.339,0,0,1,0-4.678,3.63,3.63,0,0,1,2.339,1.312,3.677,3.677,0,0,1,2.339-1.312,2.339,2.339,0,0,1,0,4.678Z" transform="translate(-286.9 -331.734)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

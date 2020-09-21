@@ -147,7 +147,7 @@ button {
   &:hover {
     text-decoration: underline;
     color: $color-bronze;
-    
+
     img {
       margin-left: 25px;
     }
@@ -167,6 +167,18 @@ button {
     color: $color-bronze;
   }
 }
+
+.btn-white {
+  border: 3px solid $color-white;
+  background-color: $color-white;
+  color: $color-cobalt;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-white;
+  }
+}
+
 
 .btn-bronze-no-pad {
   border: 3px solid $color-bronze;
